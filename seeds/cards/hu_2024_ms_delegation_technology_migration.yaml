@@ -1,0 +1,636 @@
+# ========================================================================
+# Hu Tacit Extractor v1.3 — Extraction Card
+# Paper: Delegation with Technology Migration: An Empirical Analysis of
+#        Mobile Virtual Network Operators
+# Authors: Zou / Dong / Hu / Venkataraman
+# Journal: Management Science 71(9):7244-7262 (2024)
+# Status: Third card in hu-pattern-library/cards/
+#         FIRST non-lead sample; triggered v1.2 → v1.3 dual-layer upgrade
+# ========================================================================
+
+paper_id: "hu_2024_ms_delegation_technology_migration"
+
+# ------------------ Diagnosis ------------------
+diagnosis_card:
+  title: "Delegation with Technology Migration: An Empirical Analysis of Mobile Virtual Network Operators"
+  authors:
+    - "Fan Zou (USC Moore, 1st listed)"
+    - "Yan Dong (USC Moore, 2nd listed — senior coauthor)"
+    - "Kejia Hu (Vanderbilt Owen → Oxford Saïd, 3rd listed / 2nd substantive per user)"
+    - "Sriram Venkataraman (USC Moore, 4th listed — senior pillar)"
+  journal: "Management Science"
+  journal_volume_issue: "71(9):7244-7262"
+  year: 2024
+  doi: "10.1287/mnsc.2021.01832"
+  listed_author_position: 3
+  substantive_author_position: 2  # per user confirmation
+  method_path: "causal_inference"
+  method_specific: "sliding-window DID (exploratory) + dynamic PSM (main)"
+  opening_style: "hybrid"
+  opening_sub_style: "industry_stat_interleaved_with_theory_scaffold"
+  material_access_level: "pdf_only (SSRN + published)"
+  confidence_on_auto_inferred: 0.95
+  flags:
+    - "FIRST_non_lead_sample"
+    - "triggered_dual_layer_persistence_framework_upgrade_v1.2_to_v1.3"
+    - "senior_coauthor_structure_Zou_junior_lead_Venkataraman_senior_tail"
+    - "two_stage_identification_DID_then_dPSM"
+    - "no_coined_twin_pair (industry terms used as-is)"
+    - "2x2_analytic_matrix_unnamed_taxonomy (governance × tech generation)"
+    - "8_appendices_heavy_structural_preemption"
+
+# ------------------ Contrast axes ------------------
+contrast_vs_prior_cards:
+  vs_retrials_msom:
+    path: "structural → causal_inference (DID-dPSM)"
+    opening: "phenomenon_first → hybrid"
+    journal: "MSOM → MS"
+    author_position: "1st → 2nd_substantive"
+  vs_tightening_pom:
+    method: "RDD → DID-dPSM"
+    opening: "theory_first → hybrid"
+    journal: "POM → MS"
+    author_position: "1st → 2nd_substantive"
+  key_new_dimensions:
+    - "author_position (lead → supporting) — UNLOCKS dual-layer persistence"
+    - "journal_MS (first MS sample; unlocks BC6 + BC8 closure)"
+    - "hybrid_opening (first hybrid sample; resolves BC4 to 3-form)"
+
+# ------------------ 7-Phase Evidence ------------------
+
+phase_1_phenomenon_anchoring:
+  hook_type: "industry_stat_interleaved_with_theory"
+  first_para_structure: "industry_fact_plus_immediate_theory_frame"
+  stakes_ladder_depth: 3
+  stakes_ladder_structure: "firm_performance → industry_governance → regulatory_policy"
+  stakes_ladder_type: "principal_agent_plus_regulatory_extension"
+  gap_claim_style: "two_literatures_bridge (ambidexterity × value_chain_governance)"
+  gap_claim_form_branch: "third_form_detected (neither borrowed_admission nor three_barriers_inverted)"
+  terminology_status: "INDUSTRY_TERMS_USED (branded / third-party MVNO), NOT coined"
+  analytic_unit_form: "2x2_matrix_unnamed (governance × technology_generation)"
+  theory_pillars:
+    - "exploitation/exploration (March 1991)"
+    - "value_chain_governance (Gibbons 2005)"
+    - "complementary_assets (Teece 1986)"
+  theory_pillar_count: 3
+  author_position_persistence_signal_1:
+    observation: "analytic unit present but UNNAMED (unlike Retrials retrials-types, Tightening maker-type)"
+    verdict: "EM1 naming behavior may be first_author_signature"
+    implication: "EM1_v3 splits into existence_layer (Hu_signature) + naming_layer (first_author_signature)"
+
+phase_2_data_foundation:
+  data_source_name: "proprietary panel, independent telecom research company"
+  data_provider: "independent industry research firm (not named)"
+  data_N_MNOs: 603
+  data_N_launches: 306
+  time_span: "2000Q1-2014Q4 (60 quarters, 15 years)"
+  countries: 178
+  uniqueness_claim_type: "hybrid (generation_mechanism + scarcity admission)"
+  uniqueness_mechanism_layers:
+    - "cross_country_staggered_MVNO_adoption_timing (primary)"
+    - "2G/3G_technology_transition_exogenous_timing (secondary)"
+    - "proprietary_data_access (scarcity admission — NOT present in 1st-author cards)"
+  author_position_persistence_signal_2:
+    observation: "scarcity_admission coexists with generation_mechanism"
+    verdict: "ED1 purity (no_scarcity_mixing) may be first_author_signature"
+    implication: "ED1_v3 splits into existence_layer (Hu_signature: generation mechanism in place) + purity_layer (first_author_signature: no scarcity admission allowed)"
+  data_declaration_position:
+    intro_paragraph: 6
+    preconditions_completed:
+      - "industry_stat_hook"
+      - "concept_definition"
+      - "governance_challenge_narrative"
+      - "theory_framework_embedding"
+      - "literature_gap"
+    verdict: "REV-002 cross_card=3 ✓ confirmed Hu_signature ROBUST"
+  exogenous_variation_sources:
+    primary: "cross-country staggered MVNO launch timing"
+    secondary: "2G/3G technology transition"
+  multi_sided_structure_dims: 5  # country × quarter × MNO × tech_gen × governance
+
+phase_3_method_alignment:
+  primary_method: "dynamic_propensity_score_matching_dPSM"
+  supporting_method: "sliding_window_adjusted_DID_exploratory"
+  identification_structure: "explicit_three_step_procedure"
+  identification_elements:
+    - "treatment_group_identification (kt=6 exclusion rule)"
+    - "candidate_control_identification (kc=6 + same_continent)"
+    - "dynamic_matching_via_propensity_score (NN1, kp=4)"
+  core_assumption: "SUTVA + conditional_independence_given_covariates"
+  assumption_defense_style: "dual_defense (precedent × empirical_test)"
+  assumption_defense_precedents:
+    - "Rosenbaum-Rubin 1985 (PSM)"
+    - "Aral et al. 2009 (dPSM in social networks)"
+    - "Aral-Walker 2011, 2014 (dPSM validation)"
+    - "Rishika-Ramaprasad 2019 (small sample dPSM)"
+    - "Bondonio-Greenbaum 2018 (dPSM disaster resilience)"
+    - "Autor 2003 (lead coefficients test)"
+    - "Dhanorkar 2019 (Cox / lag reverse causality)"
+  assumption_defense_empirical_tests:
+    - "covariate_balance (Appendix D.1)"
+    - "parallel_trends via lead coefficients (Appendix D.2)"
+    - "Cox + lag reverse causality (Appendix D.3)"
+    - "kt=8 / kc=8 alternative windows (Appendix E.1)"
+    - "alternative matching covariates (Appendix E.2)"
+    - "NN2/NN3 alternative matching (Appendix E.3)"
+    - "ke=6 / ke=8 alternative post-windows (Appendix E.4)"
+  methodology_pedagogy:
+    form: "dPSM_vs_DID_motivation_section"
+    strength: "weak (MS assumes method literacy; no full Appendix A tutorial)"
+    verdict: "A7 journal-inverse_intensity confirmed"
+
+phase_4_exploratory_depth:
+  main_result_structure: "2x2_matrix (governance × technology_generation)"
+  main_findings:
+    - "Branded-2G: +0.550% with decreasing trend"
+    - "Branded-3G: +7.033% with decreasing trend"
+    - "Third-party-2G: +0.253% with INCREASING trend (counterintuitive)"
+    - "Third-party-3G: null"
+  counterintuitive_rank:
+    L1_most_counterintuitive: "third-party-2G INCREASING (expected: saturation weakens agents)"
+    L2: "branded-3G decreasing (expected: lead persists)"
+    L3: "branded vs third-party asymmetry in 3G"
+    L4_most_intuitive: "MVNOs positive on 2G generally"
+  narrative_budget_allocation:
+    observation: "counterintuitive findings REPORTED but NOT narratively amplified"
+    contrast_vs_1st_author_cards: "Retrials/Tightening concentrate narrative on L1; Delegation distributes evenly"
+    author_position_persistence_signal_4:
+      verdict: "ED2 narrative_budget_allocation may be first_author_signature"
+  heterogeneity_dimensions: 2  # rural + young subsamples
+  heterogeneity_including_main_2x2: 4
+  heterogeneity_baked_in_via: "2x2_main_design + post_hoc_subsamples"
+  mechanism_validation_style: "alternative_explanation_statistical_exclusion (causal_inference form_branch)"
+  mechanism_validation_artifacts:
+    - "parallel_trends_validation"
+    - "Cox/lag_reverse_causality_exclusion"
+    - "covariate_balance_matching_artifact_exclusion"
+    - "slope_test_trend_significance"
+    - "rural/young_subsample_theoretical_prediction_alignment"
+  goodness_of_fit_check: "none (RDD/dPSM convention, no OOS CV)"
+  robustness_check_classes: 4
+  robustness_class_list:
+    - "SUTVA_validation_suite (D.1/D.2/D.3)"
+    - "alternative_selection_windows (kt=8, kc=8)"
+    - "alternative_matching_procedure (covariates, kp=6, NN2/NN3)"
+    - "alternative_measurement_windows (ke=6, ke=8)"
+  counterfactual_scenarios: 0
+  quantification_engine_type: "point_estimate_plus_CI_only"
+  quantification_engine_strength: "weak (BORDERLINE on R3 GOLD)"
+  quantification_reproducibility: "CIs reported, no multiplicative chain, no policy simulation"
+  quantified_numbers_count: 7  # mostly scale/coverage, not implication magnitudes
+  author_position_persistence_signal_4b:
+    observation: "quantification engine strength = point_estimate_only vs chain/simulation in 1st-author cards"
+    verdict: "EF1 GOLD_strength may be first_author_signature"
+
+phase_5_implication_crystallization:
+  contribution_enumeration_style: "two_contributions_explicit (NOT three)"
+  contribution_count: 2
+  author_position_persistence_signal_5:
+    observation: "2 contributions vs 3 in Retrials/Tightening"
+    verdict: "B2 contribution_count may be first_author_signature (first=3, non-first=coauthor_norm)"
+  audiences_addressed: 3
+  audiences:
+    - "academic (value_chain_governance + exploration/exploitation + complementary_assets)"
+    - "managers (delegation vs centralization trade-off rule)"
+    - "policymakers (regulating fast-changing tech value chains)"
+  number_repetition_locations: ["abstract", "intro", "results", "discussion_conclusion"]
+  number_repetition_count: 4
+  practical_relevance_evidence_form: "industry_report_citation_plus_tech_transition_anchor (third form)"
+  industry_uptake_signal: "5G rollout timing anchor (\"highly relevant and valuable now\")"
+  framework_extensibility_claim: "5G + next-generation MVNO evolution (same-industry next-gen form)"
+  framework_extensibility_support: "McKinsey/GSMA/Research&Markets industry reports"
+  future_research_directions_listed: 3
+
+phase_6_structured_assembly:
+  title_pattern: "Abstract_noun_with_PP_colon_empirical_badge_concrete_industry"
+  title_third_form_detected: true
+  title_form_by_journal_path_opening:
+    MSOM_structural_phenomenon: "gerund+colon+tension_pair (Retrials)"
+    POM_causal_theory: "Effect_of_X_on_Y (Tightening)"
+    MS_causal_hybrid: "Concept_with_Y_colon_An_Empirical_Analysis_of_Z (Delegation)"
+  abstract_format: "MS_single_paragraph"
+  abstract_micro_moves: 8
+  abstract_micro_move_sequence:
+    - "topic_statement"
+    - "concept_definition (branded vs third-party)"
+    - "RQ_narrowing (governance issues)"
+    - "method_statement"
+    - "main_finding_branded"
+    - "main_finding_third_party"
+    - "trend_discovery (asymmetric patterns)"
+    - "implication (governance decision rule)"
+  intro_paragraph_count: 10
+  intro_paragraph_rhythm: "one_paragraph_one_action"
+  intro_sequence:
+    - "industry_stat_hook_plus_AT&T_concrete"
+    - "concept_definition_plus_niche_market"
+    - "technology_overlap_governance_challenge"
+    - "value_chain_plus_exploration_exploitation_embedding"
+    - "literature_gap_plus_two_theoretical_extensions"
+    - "RQ_plus_data_and_method_declaration"
+    - "main_finding_preview_2G_asymmetry"
+    - "main_finding_preview_3G_branded_only"
+    - "contribution_statement_two_items"
+    - "5G_extension_plus_paper_roadmap"
+  data_declaration_position: "intro_paragraph_6 (after RQ, with method)"
+  section_structure: "MS_with_multiple_mergers"
+  section_merger_examples:
+    - "Section_4_Data_plus_Exploratory_Analysis_merged"
+    - "Section_7_Discussion_plus_Conclusion_merged"
+  section_merger_count: 2
+  section_merger_BC8_resolution: "section merger is NON-MSOM signature (MS+POM allow, MSOM prohibits)"
+
+phase_7_review_process:
+  extraction_mode: "inferred_only (pdf_only)"
+  confidence_ceiling: 0.6
+  RR_rounds_inferred: "2-3 (2020 SSRN → 2024 MS publication ≈4 year window)"
+  reviewer_personas_simulated: 5
+  personas_list:
+    - "P1_Methodologist_causal_inference"
+    - "P2_Domain_Skeptic_telecom"
+    - "P3_Theoretical_Critic_strategy"
+    - "P4_Policy_Managerial_Reviewer_MS"
+    - "P5_MS_Editor_boundary_judge"
+  inferred_objections_total: 15
+  objections_with_strong_preemption: 8
+  objections_with_medium_preemption: 4
+  objections_without_preemption: 3
+  preemption_coverage_strong_pct: 53
+  author_position_persistence_signal_6:
+    observation: "strong% = 53 vs Tightening 71 vs Retrials 60"
+    verdict: "preemption_coverage (strong% ≥ 60%) may be first_author_signature"
+  preemption_style: "structural_not_argumentative (8 Appendix sections A-G)"
+  appendix_count: 7  # A through G
+  main_effect_demoted_to_setup: false
+  main_effect_demotion_reason_absent: "main_effect_counterintuitive (trend asymmetry)"
+  parked_low_confidence_observations:
+    - "workshop_presentation_path (conf 0.3)"
+    - "actual_RR_round_count (conf 0.4, inferred 2-3)"
+    - "Appendix_origin_possibly_moved_from_main_text (conf 0.3)"
+
+# ------------------ Candidate Patterns After Triple-Card Aggregation ------------------
+
+candidate_patterns:
+  tier_S_repeatable_moves:
+    - id: "EM1_v3_analytic_unit_invention"
+      cross_card_freq: 3
+      dual_layer_persistence:
+        existence_layer: "Hu_signature"
+        naming_layer: "first_author_signature (explicit coined name)"
+      instances:
+        retrials: "congestion/fitness retrials (named twin pair)"
+        tightening: "maker-type (named unit)"
+        delegation: "2x2 matrix unnamed (governance × tech_gen)"
+      phases_touched: [1, 3, 4, 6]
+    - id: "EM2_v3_identification_with_dual_defense"
+      cross_card_freq: 3
+      persistence: "Hu_signature_ROBUST_highest_confidence"
+      cross_path_verified: ["structural", "RDD", "DID-dPSM"]
+      cross_author_position_verified: true
+      phases_touched: [3]
+    - id: "EM3_v3_independent_mechanism_validation"
+      cross_card_freq: 3
+      persistence: "Hu_signature_ROBUST"
+      form_branches:
+        structural: "ecological_narrative_triangulation"
+        causal_inference: "alternative_explanation_statistical_exclusion"
+      phases_touched: [4]
+
+  tier_A_mimicable_decisions:
+    - id: "ED1_v3_data_uniqueness_via_generation_mechanism"
+      cross_card_freq: 3
+      dual_layer_persistence:
+        existence_layer: "Hu_signature (mechanism in place)"
+        purity_layer: "first_author_signature (no scarcity admission)"
+      phases_touched: [2]
+    - id: "ED2_v3_narrative_budget_to_counterintuitive"
+      cross_card_freq: "2/3 (Delegation under-executed)"
+      persistence: "first_author_signature"
+      phases_touched: [4, 6]
+    - id: "A1_v3_external_practical_evidence"
+      cross_card_freq: 3
+      persistence: "Hu_signature_ROBUST"
+      form_branches:
+        MSOM_setting: "named_entity_already_interested"
+        POM_setting: "cross_industry_analog_ladder"
+        MS_setting: "industry_report_plus_tech_transition_anchor"
+      phases_touched: [5]
+    - id: "A4_v3_structural_reviewer_preemption"
+      cross_card_freq: 3
+      dual_layer_persistence:
+        existence_layer: "Hu_signature (Appendix-based preemption present)"
+        coverage_layer: "first_author_signature (strong% ≥ 60%)"
+      phases_touched: [3, 6, 7]
+    - id: "A7_v2_methodology_pedagogy_as_preemption"
+      cross_card_freq: 3
+      persistence: "Hu_signature with journal_inverse_intensity"
+      form_by_journal:
+        POM_new_method: "full_appendix_tutorial (Tightening)"
+        MSOM_structural_known: "method_specific_justification (Retrials)"
+        MS_causal_known: "method_motivation_section (Delegation weak form)"
+      phases_touched: [3]
+    - id: "A8_framework_extensibility_with_concrete_anchor"
+      cross_card_freq: 3
+      persistence: "Hu_signature"
+      form_branches:
+        method_extension: "Retrials (structural model generalizes)"
+        cross_industry: "Tightening (Wells Fargo/KPMG/Shanlu)"
+        same_industry_next_gen: "Delegation (5G, MVNO evolution)"
+      phases_touched: [5]
+    - id: "A9_section_merger_as_structural_preemption"
+      cross_card_freq: "2/3 (MSOM prohibits)"
+      persistence: "Hu_signature_conditional_non_MSOM"
+      BC8_closed: true
+
+  tier_B_structural:
+    - id: "B1_v2_intro_one_paragraph_one_action"
+      cross_card_freq: 3
+      paragraph_count_by_opening:
+        phenomenon_first: 7
+        theory_first: 10
+        hybrid: 10
+    - id: "B2_v2_explicit_contribution_enumeration"
+      cross_card_freq: 3
+      dual_layer_persistence:
+        existence_layer: "explicit_numbered (Hu_signature)"
+        count_layer: "first_author_signature (count=3 when leading)"
+    - id: "B2bis_triple_audience"
+      cross_card_freq: 3
+      persistence: "Hu_signature_ROBUST"
+    - id: "B2tri_number_repetition_across_3_plus_sections"
+      cross_card_freq: 3
+      persistence: "Hu_signature"
+    - id: "B2quad_future_research_directions"
+      cross_card_freq: 3
+      range: "3-4 directions"
+      persistence: "Hu_signature"
+    - id: "B3_stakes_three_tier_ladder"
+      cross_card_freq: 3
+      persistence: "Hu_signature_ROBUST"
+      ladder_content_path_conditional: true
+    - id: "B8_abstract_micro_move_sequence"
+      cross_card_freq: 3
+      micro_move_count: "7-8 moves"
+      format_by_journal:
+        MSOM: "5_segment_structured"
+        MS: "single_paragraph"
+        POM: "single_paragraph"
+
+  tier_C_pending_fourth_card:
+    - id: "A6_moderators_as_single_force_gradient"
+      hypothesis: "theory_first_path_specific"
+    - id: "B6_gap_as_inverted_data_asset_list"
+      hypothesis: "causal_inference_path_specific_first_author_only"
+    - id: "B7_title_pattern_path_dependent"
+      status: "3 forms validated, needs 4th card for title-journal interaction"
+
+  tier_D_demoted:
+    - id: "EM1_v1_coined_twin_terminology"
+      absorbed_into: "EM1_v3"
+    - id: "B5_structural_plus_CV_hybrid"
+      reason: "structural_path_specific"
+
+# ------------------ Confirmed Patterns (with persistence tags) ------------------
+
+confirmed_patterns_v1_3:
+  hu_signature_robust:
+    - "EM2_v3_identification_with_dual_defense"
+    - "EM3_v3_independent_mechanism_validation"
+    - "A1_v3_external_practical_evidence"
+    - "A8_framework_extensibility_with_concrete_anchor"
+    - "B2bis_triple_audience"
+    - "B2tri_number_repetition"
+    - "B3_stakes_three_tier_ladder"
+    - "REV-002_data_declaration_deferred"
+  
+  dual_layer_patterns:
+    EM1_v3:
+      existence: "Hu_signature"
+      strength: "first_author_signature (naming)"
+    ED1_v3:
+      existence: "Hu_signature"
+      purity: "first_author_signature (no_scarcity)"
+    A4_v3:
+      existence: "Hu_signature"
+      coverage: "first_author_signature (strong_preempt_60%)"
+    B2_v2:
+      existence: "Hu_signature"
+      count: "first_author_signature (count=3)"
+  
+  first_author_signature_pure:
+    - "ED2_v3_narrative_budget_to_counterintuitive"
+  
+  hu_signature_conditional:
+    A7_v2: "journal_inverse_intensity"
+    A9: "non_MSOM_only"
+
+# ------------------ Red-Line Audit ------------------
+
+red_line_audit:
+  R1_unique_data_generation_mechanism:
+    verdict: "PASS"
+    note: "generation_mechanism present but scarcity admission coexists"
+  R2_identification_hardcoded:
+    verdict: "GOLD"
+    note: "three-step § 5 + SUTVA + 4 robustness classes + 7 appendices"
+  R3_quantified_implication:
+    verdict: "PASS"
+    note: "7 numbers but point_estimate only; no multiplicative chain"
+    numbers_count: 7
+  R4_heterogeneity_mandatory:
+    verdict: "PASS"
+    dimensions: 2  # or 4 including main 2x2
+    path_note: "causal_inference path 下限达标，未达 structural path GOLD (≥5)"
+  R5_industry_specificity:
+    verdict: "GOLD"
+    note: "MNO/MVNO + branded/third-party + 2G/3G + 178 countries + 60 quarters"
+  R6_not_pure_qualitative:
+    verdict: "PASS"
+  R7_target_journal_paradigm:
+    verdict: "GOLD (MS)"
+    note: "MS empirical OM quasi-experimental canonical paradigm"
+  R8_single_main_method_path:
+    verdict: "GOLD"
+    note: "dPSM core; DID supporting; no competing methods"
+  summary: "3 GOLD + 5 PASS + 0 BORDERLINE + 0 FAIL"
+
+# ------------------ Boundary Cases (updated after triple-card aggregation) ------------------
+
+boundary_cases:
+  BC1_data_uniqueness_definition:
+    status: "CONFIRMED cross_card=3 → REV-001 committed"
+  BC2_intro_data_declaration_position:
+    status: "CONFIRMED cross_card=3 → REV-002 committed with refined wording"
+  BC3_ML_demotion_as_RL8_avoidance:
+    status: "N/A in 3 cards (no ML main method); pending Supplier (card 4)"
+  BC4_gap_statement_style:
+    status: "3_FORMS_CONFIRMED"
+    forms:
+      structural_phenomenon: "borrowed_admission"
+      causal_theory: "three_barriers_inverted"
+      causal_hybrid: "two_literatures_bridge"
+    pending: "4-form resolution needs 4th card with ml or structural+theory combo"
+  BC5_ED2_conditionality:
+    status: "REFINED — ED2 is first_author_signature (not Hu_signature)"
+  BC6_R4_threshold_journal_path:
+    status: "RESOLVED — path_specific, NOT journal_specific"
+    resolution: "structural ≥5 (GOLD); causal_inference 2-4 (PASS-BORDERLINE); ml pending"
+  BC7_extensibility_form:
+    status: "3_FORMS_CONFIRMED"
+    forms: ["method_extension", "cross_industry_analog", "same_industry_next_gen"]
+  BC8_section_merger_scope:
+    status: "CLOSED"
+    resolution: "non_MSOM_signature (MS+POM allow merger, MSOM prohibits)"
+
+# ------------------ Executable Summary v1.3 (Dual-Layer) ------------------
+
+executable_summary:
+  version: "v1.3 (dual_layer_persistence)"
+  architecture: "Hu_signature_layer (existence) + first_author_signature_layer (execution_strength)"
+  
+  three_repeatable_moves:
+    - id: "EM1_v3_analytic_unit_invention"
+      existence_layer: "Hu_signature (always has analytic structure — unit, matrix, taxonomy)"
+      strength_layer: "first_author_signature (explicit coined name: twin pair or unit name)"
+      failure_mode: "沿用文献模糊单位 → 测量与 model 错位"
+    - id: "EM2_v3_identification_with_dual_defense"
+      existence_layer: "Hu_signature ROBUST (highest confidence)"
+      strength_layer: "(none — uniformly executed)"
+      failure_mode: "只挂 precedent 或只挂 testability — reviewer 攻缺失的那条"
+    - id: "EM3_v3_independent_mechanism_validation"
+      existence_layer: "Hu_signature ROBUST"
+      strength_layer: "(none)"
+      failure_mode: "无独立 validation → main effect 被读成 artifact"
+      form_branches:
+        structural: "ecological_narrative_triangulation"
+        causal_inference: "alternative_explanation_statistical_exclusion"
+  
+  two_mimicable_decisions:
+    - id: "ED1_v3_data_generation_mechanism"
+      existence_layer: "Hu_signature (generation mechanism present)"
+      strength_layer: "first_author_signature (purity — no scarcity coexistence)"
+      decision_rule_leading: "数据 = 生成机制独特性，禁止 scarcity admission"
+      decision_rule_coauthor: "generation mechanism 在位，scarcity 可共存"
+    - id: "ED2_v3_narrative_budget_to_counterintuitive"
+      existence_layer: "(weak — may be absent in non-lead)"
+      strength_layer: "first_author_signature"
+      decision_rule: "写作前做反直觉度排序分配段落长度（首作时强制）"
+  
+  one_failure_mode:
+    - id: "EF1_v3_quantification_engine"
+      existence_layer_Hu_signature: "某种定量外推必存在 (segmented / anchor / chain / simulation)"
+      strength_layer_first_author_signature: "GOLD = multiplicative chain OR counterfactual simulation"
+      hard_fail: "完全无定量外推 (Delegation 到达 BORDERLINE 但未完全失效)"
+      soft_fail: "点估计+CI 停止 (非首作可接受，首作不可接受)"
+  
+  closed_loop_v1_3:
+    Hu_signature_spine: |
+      EM1 存在分析结构 →
+      EM2 识别专段 + 双路辩护 →
+      EM3 独立机制 validation →
+      ED1 数据生成机制在位 →
+      ED2 (非核心 spine) →
+      EF1 某种定量外推
+    first_author_intensification: |
+      EM1 命名 + twin_pair →
+      ED1 纯粹度（禁 scarcity）→
+      ED2 向反直觉集中 →
+      A4 strong_preempt ≥ 60% →
+      B2 contribution count=3 →
+      EF1 chain 或 simulation
+
+# ------------------ Framework Revisions Final ------------------
+
+framework_revisions_this_card:
+  - revision_id: "REV-003"
+    target: "six-item essence field structure"
+    status: "COMMITTED (cross_card_freq=3 triggered by Delegation's 3rd form emergence)"
+    final_structure: "condition_tree (root=abstract_MOVE, leaves=path/position-specific instantiations + form_branches)"
+  - revision_id: "REV-004"
+    target: "Phase 1 Intake journal verification"
+    status: "COMMITTED (system protocol — exposed by this card's missing journal)"
+    rule: "Phase 1 must web_search verify published journal before entering Phase 2"
+  - revision_id: "REV-005"
+    target: "R4 GOLD threshold path-specificity"
+    status: "COMMITTED (3 path × 3 card datapoints)"
+    rule: |
+      structural: R4 GOLD ≥ 5 dimensions
+      causal_inference: R4 GOLD ≥ 3 (PASS 2-3)
+      ml: pending 4th card validation
+  - revision_id: "REV-006"
+    target: "dual-layer persistence architecture (Hu_signature × first_author_signature)"
+    status: "COMMITTED (6 signals detected across EM1/ED1/ED2/EF1/A4/B2)"
+    rule: |
+      Every confirmed pattern now requires dual tags:
+      existence_layer: {Hu_signature | first_author_signature | coauthor_neutral}
+      strength_layer: (optional, applies when pattern has intensity gradient)
+
+# ------------------ MS Fingerprint Seed (for journal-pattern-library) ------------------
+
+journal_fingerprint_contribution:
+  target_journal: "Management Science"
+  features_observed_n1:
+    - "single_paragraph_abstract_plus_7_8_micro_moves"
+    - "section_mergers_allowed (Data+Exploratory; Discussion+Conclusion)"
+    - "title_noun_with_colon_An_Empirical_Analysis_of"
+    - "method_pedagogy_lighter_than_POM (reader method literacy higher)"
+    - "heavy_appendix_usage_A_through_G"
+    - "2x2_analytic_matrix_as_common_structure"
+  aggregation_status: "n=1, insufficient; needs ≥5 MS papers for fingerprint commit"
+
+# ------------------ Copyright Compliance ------------------
+
+copyright_compliance:
+  max_quote_words_used: 0
+  max_quotes_per_source_used: 0
+  inferred_tags_count: 20
+  paraphrase_coverage_percent: 100
+  wish_words_detected: 0
+  quote_budget_in: 1
+  quote_budget_out: 1
+  quote_budget_status: "fully preserved across 3 cards"
+
+# ------------------ Next-Card Recommendations ------------------
+
+next_card_recommendations:
+  recommended_next_card: "Supplier Selection Criteria (Hu 1st author, POM 2024)"
+  rationale: |
+    Maximum validation power for v1.3 dual-layer framework:
+    1. 1st_author again (tests if first_author_signature layer holds as Hu returns to lead)
+    2. ml_forecasting path (GBDT + 6 ML) — resolves R4 ml_path threshold (BC6 final)
+    3. theory_first opening (tests BC4 4th form emergence)
+    4. POM 2nd sample (tests B7 title pattern journal interaction)
+    5. Tests BC3 (ML demotion vs Red Line 8)
+  expected_validations:
+    - "EM1_v3 naming behavior — expected REACTIVATED (first_author)"
+    - "ED1_v3 purity — expected REACTIVATED (no scarcity)"
+    - "ED2_v3 narrative budget — expected REACTIVATED"
+    - "EF1_v3 quantification engine — expected RE-INTENSIFIED to GOLD"
+    - "B2 contribution count — expected = 3"
+    - "A4 preempt strong% — expected ≥ 60%"
+  falsification_targets:
+    - "If EM1_v3 naming is ABSENT in Supplier (1st_author) → first_author_signature hypothesis FAILS"
+    - "If quantification chain ABSENT in Supplier → EF1 strength_layer hypothesis FAILS"
+
+# ------------------ Card Metadata ------------------
+
+card_metadata:
+  extractor_version: "HuTacitExtractor v1.3"
+  extraction_mode: "single_paper_cross_position"
+  verbosity: "batched"
+  extraction_rounds: 5
+  phases_executed: ["diagnose", "decompose_x7", "surface", "audit", "distill_dual_layer", "handoff"]
+  candidate_patterns_surfaced: 22
+  confirmed_patterns_v1_3: 13
+  dual_layer_patterns: 4
+  first_author_signature_only: 1
+  tier_C_candidates_remaining: 3
+  tier_D_demoted_cumulative: 2
+  boundary_cases_registered: 8
+  boundary_cases_confirmed_or_closed: 6
+  boundary_cases_pending: 2
+  framework_revisions_committed_this_card: 4
+  red_line_GOLD_count: 3
+  red_line_PASS_count: 5
+  session_continuation: "from Retrials + Tightening session; FIRST non-lead sample"
+  special_note: "Triggered v1.2 → v1.3 dual-layer architecture upgrade"

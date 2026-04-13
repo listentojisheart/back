@@ -1,0 +1,708 @@
+# ========================================================================
+# Hu Tacit Extractor v1.4 — Extraction Card
+# Paper: Supplier Selection Criteria under Heterogeneous Sourcing Needs:
+#        Evidence from an Online Marketplace for Selling Production Capacity
+# Authors: Hu / Kong / Jia
+# Journal: Production and Operations Management 34(2):168-186 (2025)
+# DOI: 10.1177/10591478241279384
+# Status: Fourth card in hu-pattern-library/cards/
+#         FIRST ml_path sample; triggered v1.3 → v1.4 three-layer
+#         first_author_signature architecture (path_agnostic vs path_capped)
+# ========================================================================
+
+paper_id: "hu_2025_pom_supplier_selection_criteria"
+
+# ------------------ Diagnosis ------------------
+diagnosis_card:
+  title: "Supplier Selection Criteria under Heterogeneous Sourcing Needs: Evidence from an Online Marketplace for Selling Production Capacity"
+  authors:
+    - "Kejia Hu (Vanderbilt Owen → Oxford Saïd, 1st)"
+    - "Lu Kong (USF)"
+    - "Zhenzhen Jia"
+  journal: "Production and Operations Management"
+  journal_volume_issue: "34(2):168-186"
+  publisher_era: "POM-SAGE (post-2024 shift from Wiley)"
+  year: 2025
+  doi: "10.1177/10591478241279384"
+  author_position: 1  # LEAD RETURNS
+  method_path: "ml_forecasting (GBDT + 6 ML/econometric benchmarks)"
+  method_specific: "gradient_boosted_decision_trees_with_10fold_CV_hyperparameter_tuning"
+  opening_style: "theory_first"
+  opening_sub_style: "theory_flux_to_empirical_gap"
+  material_access_level: "pdf_only"
+  confidence_on_auto_inferred: 0.95
+  flags:
+    - "FIRST ml_path sample in corpus"
+    - "FIRST POM-SAGE era sample (publisher shift from Wiley 2021)"
+    - "triggered v1.3 → v1.4 three-layer first_author_signature architecture"
+    - "quality_as_constraint_revision (theory revision claim)"
+    - "6_ML_benchmarks_as_robustness (R8 GOLD preserved)"
+    - "endogeneity_triad_audit_as_identification_substitute (ml path)"
+    - "implications_as_standalone_section_6 (novel structural element)"
+    - "Essential_Service_Package_as_policy_prescription_naming"
+
+framework_test_role: "v1.3 dual-layer falsification test"
+falsification_results:
+  EM1_naming_reactivation:
+    prediction: "REACTIVATE when 1st_author returns"
+    observation: "PARTIAL — analytic_unit naming weak (ml path ceiling); policy_prescription naming PRESENT (Essential Service Package)"
+    verdict: "dual-sublayer decomposition required → REV-008"
+  ED1_purity_reactivation:
+    prediction: "REACTIVATE (no scarcity admission)"
+    observation: "FULL YES — § 3.3 pure generation mechanism argumentation"
+    verdict: "path_agnostic first_author_signature CONFIRMED"
+  ED2_counterintuitive_concentration:
+    prediction: "REACTIVATE (narrative focus on counterintuitive)"
+    observation: "YES — 'stated vs revealed preference divergence' + quality-as-constraint revision call"
+    verdict: "path_agnostic first_author_signature CONFIRMED, new form_branch emerges (reversal_as_theory_revision_call)"
+  A4_strong_preempt_60pct:
+    prediction: "≥60%"
+    observation: "59% (borderline); cross-card range 53%-71%"
+    verdict: "threshold relaxed to 55% (REV-009)"
+  B2_contribution_count_3:
+    prediction: "count=3 when 1st_author"
+    observation: "3 contributions YES; explicit numbering shifts from Intro to Conclusion"
+    verdict: "CONFIRMED with position flexibility"
+  EF1_chain_simulation_reactivation:
+    prediction: "chain or counterfactual simulation"
+    observation: "PARTIAL — coefficient-to-actionable-value mapping matrix (medium strength, not chain)"
+    verdict: "method_path_ceiling — first_author_signature path_capped → REV-007"
+
+# ------------------ Contrast axes ------------------
+contrast_vs_prior_cards:
+  vs_retrials_msom_structural_1st:
+    path: "structural → ml"
+    journal: "MSOM → POM-SAGE"
+    same: "both 1st_author"
+  vs_tightening_pom_rdd_1st:
+    method: "RDD → GBDT"
+    publisher: "POM-Wiley → POM-SAGE"
+    opening: "both theory_first but sub-style differs"
+  vs_delegation_ms_did_2nd:
+    author_position: "2nd_substantive → 1st"
+    journal: "MS → POM-SAGE"
+    crucial_validation: "first_author_signature reactivation test"
+  vs_all_three_priors: "introduces ml_path and POM-SAGE era simultaneously"
+
+# ------------------ 7-Phase Evidence ------------------
+
+phase_1_phenomenon_anchoring:
+  hook_type: "theory_first"
+  first_sentence_pattern: "universal_practice_statement_plus_literature_tension"
+  opening_sub_style: "theory_flux_to_empirical_gap"
+  stakes_ladder_depth: 3
+  stakes_ladder_structure: "retailer_decision → platform_matching_efficiency → supplier_investment_plus_theory_revision"
+  gap_claim_style: "theoretical_consensus_gap_plus_stated_vs_revealed_divergence"
+  gap_claim_form_branch: "FOURTH_form_detected (BC4 downgraded to open classification)"
+  coined_terminology:
+    analytic_unit_level: "WEAK — supplier-order-pair exists but unnamed; 18 attribute names adopted from platform"
+    policy_prescription_level: "Essential Service Package (original naming, § 6.2)"
+    theoretical_concept_level: "quality-as-constraint (borrowed/revised from existing literature)"
+  analytic_structure_form: "feature_importance_ranking_plus_stratification_matrix (order_size × product_type)"
+  theory_pillar_count: 3  # procurement / info disclosure / Fisher product classification
+  theory_pillar_mode: "refinement_via_empirical_revelation (not new theory construction)"
+  naming_subsignal:
+    verdict: "EM1 double-sublayer decomposition required"
+    analytic_sublayer: "path-capped (ml compresses naming need because feature importance list IS the output)"
+    policy_sublayer: "path_agnostic (first_author_signature preserved)"
+
+phase_2_data_foundation:
+  data_source_name: "Chinese B2B online marketplace (anonymized, production capacity sales)"
+  data_provider: "single B2B platform"
+  data_N_transactions: 21249
+  data_N_suppliers: 440
+  time_span: "Sep 2017 - Jun 2018 (9 months)"
+  industries: ["apparel (main)", "textile", "knitwear"]
+  attributes_N: 18
+  attribute_dimensions: 4  # price, quality, speed, service
+  uniqueness_claim_type: "pure_generation_mechanism_4_pillars"
+  uniqueness_claim_explicit_section: "§ 3.3 'Characteristics of the Data'"
+  uniqueness_mechanism_layers:
+    - "data generated from actual supplier selection process"
+    - "platform standardization enables complete information observation"
+    - "substantial supplier-retailer pairs enable design-driven generalization (NOT scarcity)"
+    - "data generation mechanism removes endogeneity (3 sources)"
+  scarcity_admission_check: "ABSENT — 'unique dataset' phrase in Intro Para 2 mild, but § 3.3 fully purity-argumented"
+  ED1_purity_verdict: "REACTIVATED (first_author_signature path_agnostic confirmed)"
+  endogeneity_audit:
+    source_1_omitted_variable: "platform observes all influential attributes"
+    source_2_simultaneity: "attributes revealed before selection (causal direction clean)"
+    source_3_measurement_error: "direct database sourcing + outlier investigation"
+    novelty: "first card with explicit endogeneity triad as structural element"
+    verdict: "candidate 'endogeneity_triad_audit_as_ml_path_identification_substitute' — pending 2nd ml sample"
+  data_declaration_position:
+    intro_paragraph: 2
+    rq_declaration_paragraph: 1  # end of Para 1
+    verdict: "symbolically satisfies 'after RQ' but breaks 'with method' co-location (method at Para 4)"
+    REV_002_refinement_v1_3: "core rule 'after RQ' holds 4/4; paragraph specific position is method_path dependent (ml declares data early)"
+  exogenous_variation_sources:
+    primary_functional_equivalent: "disclosure_timing_precedes_selection"
+    note: "ml does NOT provide causal identification; provides robust feature importance"
+  multi_sided_structure_dims: 5  # supplier × retailer × transaction × order_size × product_type
+
+phase_3_method_alignment:
+  primary_method: "gradient_boosted_decision_trees_GBDT"
+  supporting_methods_6_robustness:
+    - "Linear Regression"
+    - "Logistic Regression"
+    - "Decision Tree"
+    - "Random Forest"
+    - "XGBoost"
+    - "KNN"
+  method_hierarchy_verdict: "single_main_plus_robustness_alternatives (R8 GOLD preserved, BC3 resolved)"
+  BC3_resolution: "Hu global rule: 1 main method + alternatives as robustness (regardless of path)"
+  identification_structure: "endogeneity_source_triad_audit (ml path substitute for traditional identification)"
+  assumption_defense_style: "dual_defense (precedent × empirical_test)"
+  assumption_defense_precedents:
+    - "Ye et al. 2009 (GBDT foundational)"
+    - "Bastani-Bayati 2020 (feature selection)"
+    - "Ferreira 2015 / Ang 2015 / Bertsimas 2016 (OM ML precedents)"
+    - "Sun et al. 2022 (feature importance interpretation)"
+    - "Arlot-Celisse 2010 (CV methodology)"
+    - "Wan-Beil 2009 (qualification screening)"
+    - "Fisher 1997 (product classification theory)"
+  assumption_defense_empirical_tests:
+    - "6 ML/econometric benchmarks × MAE/MSE/STD (Table 3)"
+    - "10-fold CV hyperparameter tuning (Appendix A)"
+    - "confidence intervals on feature importance"
+    - "cross-industry replication (textile + knitwear)"
+    - "endogeneity triad exclusion (§ 3.3)"
+  methodology_pedagogy:
+    form: "medium_strength"
+    instruments: ["§ 4.1 GBDT mechanism explanation", "Appendix A tuning procedure", "ESL textbook footnote"]
+    intensity_verdict: "POM × moderately-familiar method → medium pedagogy"
+    A7_refinement: "continuous spectrum reader_method_familiarity"
+
+phase_4_exploratory_depth:
+  main_result_type: "feature_importance_ranking_plus_stratified_reshuffling"
+  full_sample_main_finding:
+    - "Lead Time Rate 20% importance (top)"
+    - "Price 11%"
+    - "other speed attributes (Response Rate, Issue Rate)"
+    - "quality < speed × price (COUNTERINTUITIVE vs survey literature)"
+    - "service < quality"
+  counterintuitive_rank:
+    L1_most_counterintuitive: "quality is NOT top attribute (reverses 50+ years of survey literature Dickson 1966)"
+    L2: "service matters MORE for small orders (asymmetric order_size effect)"
+    L3: "functional vs innovative attribute importance inversion"
+    L4_most_intuitive: "service attributes overall low importance"
+  narrative_budget_allocation:
+    observation: "ED2 REACTIVATED — § 4.2 contains concentrated 'stated vs revealed preference divergence' narrative + explicit theory revision call ('quality as constraint not objective')"
+    form_branch_new: "reversal_as_theory_revision_call (ml path signature)"
+    verdict: "first_author_signature confirmed, path_agnostic"
+  heterogeneity_dimensions: 2  # order_size × product_type
+  heterogeneity_effective_cells: 8  # 4 order_size buckets × 2 product types
+  R4_verdict: "GOLD (ml path threshold ≥4)"
+  BC6_ml_resolution: "ml path R4 GOLD threshold = 4 dimensions"
+  mechanism_validation_style: "multi_layer_consistency_plus_theoretical_alignment (ml path form_branch)"
+  mechanism_validation_layers:
+    - "6 ML cross-method consistency in ranking"
+    - "cross-industry replication (apparel → textile → knitwear)"
+    - "cross-stratification coherence (order_size × product_type)"
+    - "Fisher 1997 theoretical prediction alignment"
+    - "Verma-Pullman 1998 empirical precedent alignment"
+  EM3_v3_form_branch_completeness: "3 paths (structural/causal/ml) all verified"
+  robustness_check_classes: 3
+  robustness_class_list:
+    - "alternative ML/econometric methods (7-way benchmark)"
+    - "sub-industry replication (textile/knitwear)"
+    - "hyperparameter tuning validation"
+  counterfactual_scenarios: 0
+  quantification_engine_type: "coefficient_to_actionable_value_mapping_matrix"
+  quantification_engine_strength: "Tier_GOLD_MEDIUM (between point_estimate and chain/simulation)"
+  quantification_examples:
+    - "1% Lead Time Rate improvement → 3.78% price premium (order < 300 units)"
+    - "1% Accuracy Rate improvement → 0.45% price premium"
+    - "18 attributes × 4 order size buckets ROI matrix"
+  EF1_v4_tier_classification: "Tier_GOLD_MEDIUM"
+  EF1_path_ceiling_verdict: "ml path cannot reach GOLD (chain/simulation) because feature importance is not causal coefficient; GOLD-MEDIUM is ml path upper bound"
+
+phase_5_implication_crystallization:
+  contribution_enumeration_style: "three_contributions_implicit_numbered"
+  contribution_count: 3
+  contribution_numbering_location: "Conclusion § 7 (explicit 1/2/3); Intro uses 'leveraging/Furthermore/Employing' soft connectors"
+  B2_verdict: "REACTIVATED with position-shift (Intro→Conclusion explicit numbering)"
+  audiences_addressed: 3
+  audiences_specific:
+    - "Academic (procurement + sourcing literature refinement)"
+    - "Suppliers (investment ROI guide § 6.1)"
+    - "Platforms (UI/service design § 6.2)"
+  B2bis_width_note: "narrow deep-dive (all 3 audiences are B2B ecosystem) vs broader-reach in structural/causal cards"
+  number_repetition_locations:
+    - "abstract (LTR 20%, 3.78% premium)"
+    - "intro (3.78%, 0.45%)"
+    - "§ 4.2 results (full feature importance ranking)"
+    - "§ 6.1 ROI matrix"
+    - "conclusion (recap)"
+  number_repetition_count: 5
+  practical_relevance_evidence_form: "cross_industry_example_ladder_plus_platform_design_prescription"
+  A1_v3_form_branch_FOURTH:
+    branch_id: "cross_industry_example_ladder_plus_actionable_platform_design"
+    concrete_companies_cited: ["Zara", "Apple", "Toyota", "Samsung", "Etsy", "Walmart", "Best Buy"]
+  framework_extensibility_claim_form: "same_domain_cross_subindustry (B2B platform across retail goods)"
+  A8_form_branch_FOURTH: "same_domain_cross_subindustry_extension"
+  future_research_directions_listed: 5
+  B2quad_range_refinement: "3-5 directions (previously 3-4)"
+  essential_service_package_naming:
+    verdict: "policy_prescription level original naming"
+    EM1_sublayer: "policy_prescription_naming (path_agnostic candidate)"
+
+phase_6_structured_assembly:
+  title_pattern: "Noun_phrase under Condition_phrase: Evidence from Setting_phrase"
+  title_fourth_form_detected: true
+  title_form_by_journal_publisher_era_path_opening:
+    MSOM_structural_phenomenon: "gerund+colon+tension_pair (Retrials)"
+    POM_Wiley_causal_theory: "Effect_of_X_on_Y (no colon, Tightening)"
+    MS_causal_hybrid: "Concept_with_Y: An_Empirical_Analysis_of_Z (Delegation)"
+    POM_SAGE_ml_theory: "Noun_under_Condition: Evidence_from_Setting (Supplier)"
+  BC12_POM_publisher_era_observation: "POM-Wiley title no-colon vs POM-SAGE title colon+badge"
+  abstract_format: "POM_SAGE_single_paragraph"
+  abstract_micro_moves: 8
+  abstract_micro_move_sequence:
+    - "topic_universality_statement"
+    - "literature_gap_three_streams"
+    - "empirical_setting_plus_method"
+    - "main_finding_attribute_ranking"
+    - "moderation_order_size"
+    - "moderation_product_type"
+    - "supplier_implication"
+    - "platform_implication"
+  intro_paragraph_count: 8
+  intro_paragraph_rhythm: "one_paragraph_one_action"
+  intro_sequence:
+    - "theory_flux_hook_plus_RQ_seed"
+    - "empirical_setting_plus_data_scale"
+    - "attribute_menu_detail"
+    - "method_declaration_plus_main_finding_preview"
+    - "supplier_implication_with_ROI_examples"
+    - "platform_implication_with_essential_service_package"
+    - "contribution_enumeration_weak_signaled"
+    - "paper_roadmap"
+  B1_path_refinement: "theory_first × ml = 8 paragraphs (method_path reduces need for meandering setup)"
+  data_declaration_position: "intro_paragraph_2 (after RQ Para 1 end; method in Para 4)"
+  REV_002_v1_3_refinement: "core 'after RQ' holds; paragraph specific position method_path dependent"
+  section_structure: "POM_SAGE_with_implications_standalone"
+  section_count: 7
+  section_mergers:
+    - "§ 4 Empirical Analysis = Method + Results combined"
+  section_standalone_innovation:
+    - "§ 6 Managerial Implications AS STANDALONE SECTION with 6.1 Suppliers + 6.2 Platform"
+  section_merger_count: 1
+  BC8_revised_observation: "POM-SAGE Supplier 1 merger vs POM-Wiley Tightening 2 mergers vs MS Delegation 2 mergers vs MSOM Retrials 0 mergers"
+
+phase_7_review_process:
+  extraction_mode: "inferred_only"
+  confidence_ceiling: 0.6
+  submission_timeline:
+    ssrn_posted: "2023-04"
+    express_online: "2024-08"
+    print_issue: "2025-02"
+    inferred_RR_rounds: "2-3"
+  reviewer_personas_simulated: 5
+  personas_list:
+    - "P1_Methodologist_ML_econometric"
+    - "P2_Domain_Skeptic_procurement"
+    - "P3_Theoretical_Critic_supply_chain"
+    - "P4_Managerial_Policy_Reviewer_POM"
+    - "P5_POM_Editor_boundary_judge"
+  inferred_objections_total: 17
+  objections_with_strong_preemption: 10
+  objections_with_medium_preemption: 5
+  objections_without_preemption: 2
+  preemption_coverage_strong_pct: 59
+  A4_strong_pct_verdict: "59% (borderline below original 60% threshold → REV-009 relaxes to ≥55%)"
+  preemption_style: "structural_not_argumentative (Appendices A-B + § 3.3 + § 5)"
+  appendix_count: 2  # A hyperparameter + B benchmark table
+  dedicated_preemption_sections: 3  # § 3.3 endogeneity + § 5 robustness + § 6 implications
+  main_effect_demoted: false
+  main_effect_role: "main effect IS counterintuitive finding (quality not top) → focal element"
+  parked_low_confidence_observations:
+    - "R&R_rounds_inferred_2-3 (conf 0.4)"
+    - "workshop_trail (conf 0.3)"
+    - "editor_identity (conf 0.2)"
+    - "appendix_origin_moved_from_main (conf 0.3)"
+
+# ------------------ Candidate Patterns After 4-Card Aggregation ------------------
+
+candidate_patterns:
+  tier_S_repeatable_moves:
+    - id: "EM1_v4_analytic_structure_invention"
+      cross_card_freq: 4
+      three_layer_persistence:
+        existence_layer_hu_signature: "every paper has analytic structure"
+        analytic_unit_naming_sublayer: "path_capped (structural strongest, ml weakest)"
+        policy_prescription_naming_sublayer: "path_agnostic first_author_signature"
+      instances:
+        retrials: "congestion/fitness retrials (analytic twin pair NAMED)"
+        tightening: "maker-type (analytic unit NAMED)"
+        delegation: "2x2 matrix UNNAMED (non-lead)"
+        supplier: "Essential Service Package (policy level NAMED; analytic level weak)"
+      phases_touched: [1, 3, 4, 6]
+    - id: "EM2_v3_identification_with_dual_defense"
+      cross_card_freq: 4
+      cross_path_completeness: "structural + RDD + DID/dPSM + ml (FULL)"
+      persistence: "Hu_signature_ROBUST_highest_confidence"
+      form_branches_v1_4:
+        structural: "parameter_to_variation_map"
+        RDD: "three_element_dedicated_segment"
+        DID_dPSM: "three_step_identification_procedure"
+        ml: "endogeneity_source_triad_audit"
+      phases_touched: [3]
+    - id: "EM3_v3_independent_mechanism_validation"
+      cross_card_freq: 4
+      cross_path_completeness: "3 paths fully covered"
+      persistence: "Hu_signature_ROBUST"
+      form_branches_v1_4:
+        structural: "ecological_narrative_triangulation"
+        causal_inference: "alternative_explanation_statistical_exclusion"
+        ml: "multi_layer_consistency_plus_theoretical_alignment"
+      phases_touched: [4]
+
+  tier_A_mimicable_decisions:
+    - id: "ED1_v3_data_uniqueness_via_generation_mechanism"
+      cross_card_freq: 4
+      dual_layer_persistence:
+        existence_layer: "Hu_signature"
+        purity_layer: "first_author_signature_path_agnostic (4/4 verified)"
+    - id: "ED2_v3_narrative_budget_to_counterintuitive"
+      cross_card_freq: 4
+      persistence: "first_author_signature_path_agnostic"
+      form_branches_by_path:
+        structural_main_intuitive: "demoted_to_setup"
+        causal_main_counterintuitive: "elevated_to_focus"
+        ml_revealed_vs_stated: "reversal_as_theory_revision_call"
+    - id: "A1_v3_external_practical_evidence"
+      cross_card_freq: 4
+      persistence: "Hu_signature_ROBUST_highest"
+      form_branches_v1_4:
+        MSOM_setting: "named_entity_already_interested"
+        POM_Wiley_causal: "cross_industry_analog_ladder"
+        MS_setting: "industry_report_plus_tech_transition_anchor"
+        POM_SAGE_ml: "cross_industry_example_plus_platform_design_prescription"
+    - id: "A4_v3_structural_reviewer_preemption"
+      cross_card_freq: 4
+      dual_layer_persistence:
+        existence_layer: "Hu_signature (Appendix-based preemption)"
+        coverage_layer: "first_author_signature_path_agnostic (strong% ≥55% threshold, REV-009)"
+    - id: "A7_v2_methodology_pedagogy"
+      cross_card_freq: 4
+      persistence: "Hu_signature (continuous spectrum: reader_method_familiarity)"
+    - id: "A8_framework_extensibility_with_concrete_anchor"
+      cross_card_freq: 4
+      persistence: "Hu_signature_ROBUST"
+      form_branches_v1_4: ["method_extension", "cross_industry_analog", "same_industry_next_gen", "same_domain_cross_subindustry"]
+    - id: "A9_section_merger_as_structural_preemption"
+      cross_card_freq: "3/4 (Supplier 1 merger only)"
+      persistence: "Hu_signature_conditional"
+      BC8_observation: "MSOM=0, POM-Wiley=2, MS=2, POM-SAGE=1 (potential publisher era effect)"
+
+  tier_B_structural:
+    - id: "B1_v2_intro_one_paragraph_one_action"
+      cross_card_freq: 4
+      paragraph_count_by_opening_path:
+        phenomenon_first_structural: 7
+        theory_first_causal: 10
+        theory_first_ml: 8
+        hybrid_causal: 10
+    - id: "B2_v2_explicit_contribution_enumeration"
+      cross_card_freq: 4
+      dual_layer_persistence:
+        existence_layer_numbered: "Hu_signature"
+        count_layer: "first_author_signature_path_agnostic (count=3 when 1st)"
+        position_flexibility: "Intro + Conclusion OR Conclusion-only"
+    - id: "B2bis_triple_audience"
+      cross_card_freq: 4
+      persistence: "Hu_signature_ROBUST_highest"
+      width_note: "structural/causal=broad; ml=narrow deep-dive"
+    - id: "B2tri_number_repetition_across_3_plus_sections"
+      cross_card_freq: 4
+      persistence: "Hu_signature_ROBUST_highest"
+    - id: "B2quad_future_research_directions"
+      cross_card_freq: 4
+      range_refinement: "3-5 directions"
+    - id: "B3_stakes_three_tier_ladder"
+      cross_card_freq: 4
+      persistence: "Hu_signature_ROBUST_highest"
+    - id: "B8_abstract_micro_move_sequence"
+      cross_card_freq: 4
+      micro_move_count: "7-8"
+      format_by_journal:
+        MSOM: "5_segment_structured"
+        MS: "single_paragraph"
+        POM_Wiley: "single_paragraph"
+        POM_SAGE: "single_paragraph"
+
+  tier_C_pending_fifth_card:
+    - id: "A6_moderators_as_single_force_gradient"
+      status: "Tightening only"
+    - id: "B6_gap_as_inverted_data_asset_list"
+      status: "Tightening only"
+    - id: "endogeneity_triad_audit_as_ml_identification_substitute"
+      status: "Supplier only (1/4), pending 2nd ml sample"
+    - id: "implications_as_standalone_section_with_subsections_by_audience"
+      status: "Supplier only"
+    - id: "policy_prescription_naming_sublayer"
+      status: "Supplier strong; Retrials/Tightening weak implicit; needs confirmation"
+    - id: "BC12_POM_Wiley_vs_SAGE_era_effect"
+      status: "1 Wiley sample + 1 SAGE sample; needs WeStore POM-SAGE for BC12 resolution"
+    - id: "B7_title_pattern_refinement_with_publisher_era"
+      status: "4 forms across 4 cards; publisher era variable introduced"
+
+  tier_D_demoted:
+    - id: "EM1_v1_coined_twin_terminology"
+      reason: "absorbed_into_EM1_v4_sublayered"
+    - id: "B5_structural_plus_CV_hybrid"
+      reason: "structural_path_specific"
+
+# ------------------ Confirmed Patterns v1.4 ------------------
+
+confirmed_patterns_v1_4:
+  hu_signature_robust_highest_confidence_4_of_4:
+    - "EM2_v3_identification_with_dual_defense (cross_path=4 complete)"
+    - "EM3_v3_independent_mechanism_validation (cross_path=3 branches complete)"
+    - "A1_v3_external_practical_evidence (4 form_branches)"
+    - "A8_framework_extensibility (4 form_branches)"
+    - "B2bis_triple_audience"
+    - "B2tri_number_repetition"
+    - "B3_stakes_three_tier_ladder"
+    - "B8_abstract_micro_move_sequence"
+    - "REV-002_data_declaration_after_RQ (4/4 core rule)"
+
+  three_layer_patterns:
+    EM1_v4:
+      existence: "Hu_signature"
+      analytic_naming_sublayer: "first_author_signature path_capped (ml weakest)"
+      policy_naming_sublayer: "first_author_signature path_agnostic candidate"
+    ED1_v3:
+      existence: "Hu_signature"
+      purity: "first_author_signature path_agnostic 4/4"
+    A4_v3:
+      existence: "Hu_signature"
+      coverage: "first_author_signature path_agnostic (≥55% relaxed)"
+    B2_v2:
+      existence: "Hu_signature numbered"
+      count: "first_author_signature path_agnostic (count=3)"
+      position: "Intro+Conclusion OR Conclusion-only (flexible)"
+    EF1_v4:
+      existence: "Hu_signature (some form)"
+      strength: "first_author_signature path_capped (4-tier)"
+
+  first_author_signature_pure_path_agnostic:
+    - "ED2_v3_narrative_budget_to_counterintuitive (form_branches by path but decision rule path_agnostic)"
+
+# ------------------ Red-Line Audit ------------------
+
+red_line_audit:
+  R1_unique_data_generation_mechanism:
+    verdict: "GOLD"
+    note: "§ 3.3 pure 4-pillar argumentation"
+  R2_identification_hardcoded:
+    verdict: "PASS_ml_functional_substitute"
+    note: "endogeneity_triad_audit (ml cannot GOLD on traditional identification)"
+  R3_quantified_implication:
+    verdict: "PASS_MEDIUM"
+    note: "coefficient_to_value_mapping (EF1 Tier GOLD-MEDIUM); ml path ceiling"
+  R4_heterogeneity_mandatory:
+    verdict: "GOLD"
+    dimensions_effective: 8  # 4 order_size × 2 product_type
+    note: "ml path GOLD threshold ≥4 — confirmed by Supplier"
+  R5_industry_specificity:
+    verdict: "GOLD"
+    note: "apparel×textile×knitwear + 18 named attributes + 5 companies"
+  R6_not_pure_qualitative:
+    verdict: "PASS"
+  R7_target_journal_paradigm:
+    verdict: "GOLD (POM-SAGE)"
+    note: "POM empirical OM ML paradigm exemplar"
+  R8_single_main_method_path:
+    verdict: "GOLD"
+    note: "GBDT main; 6 ML benchmark as robustness (BC3 resolved)"
+  summary: "5 GOLD + 3 PASS + 0 BORDERLINE + 0 FAIL"
+
+# ------------------ Boundary Cases ------------------
+
+boundary_cases_status:
+  closed_after_4_cards:
+    - "BC1_data_uniqueness (REV-001)"
+    - "BC2_intro_data_declaration (REV-002 v1.3)"
+    - "BC3_ML_demotion (Hu global rule single_main+robustness)"
+    - "BC5_ED2_conditionality (first_author_signature path_agnostic)"
+    - "BC6_R4_threshold (path_specific: ml≥4, structural≥5, causal≥3)"
+    - "BC7_extensibility_form (4+ forms acknowledged; MOVE confirmed)"
+  partially_closed:
+    - "BC4_gap_form_path_dependency (downgraded to open classification — 4+ forms)"
+    - "BC8_section_merger_scope (MSOM=0 confirmed; non-MSOM varies with publisher era)"
+  still_pending:
+    - "BC9_EM1_naming_by_path_position (new hypothesis: method_path ceiling on analytic naming)"
+    - "BC10_endogeneity_audit_as_identification_substitute (1/4 occurrence, needs 2nd ml)"
+    - "BC11_ml_R2_substitute_pattern (merged with BC10)"
+    - "BC12_POM_Wiley_vs_SAGE_publisher_era_effect (new)"
+
+# ------------------ Executable Summary v1.4 (Three-Layer Architecture) ------------------
+
+executable_summary:
+  version: "v1.4 (three_layer_architecture)"
+  architecture: |
+    Three layers per pattern:
+    1. Hu_signature layer (existence) — all Hu papers regardless of position
+    2. first_author_signature path_agnostic layer (uniform execution when Hu leads)
+    3. first_author_signature path_capped layer (method_path ceiling limits execution strength)
+  
+  three_repeatable_moves:
+    - id: "EM1_v4_analytic_structure_invention"
+      existence_layer: "Hu_signature (every paper has analytic structure)"
+      analytic_naming_sublayer: "first_author_signature path_capped (structural>causal>ml)"
+      policy_naming_sublayer: "first_author_signature path_agnostic (always present when leading)"
+      failure_mode: "沿用文献模糊单位致测量与 model 错位"
+      
+    - id: "EM2_v3_identification_with_dual_defense"
+      existence_layer: "Hu_signature ROBUST highest confidence"
+      form_branches_by_path: [structural, RDD, DID_dPSM, ml] # all verified
+      failure_mode: "只挂 precedent 或只挂 testability — reviewer 攻缺失那条"
+      
+    - id: "EM3_v3_independent_mechanism_validation"
+      existence_layer: "Hu_signature ROBUST"
+      form_branches_by_path: [structural, causal_inference, ml] # all verified
+      failure_mode: "无独立 validation → main effect 被读成 artifact"
+  
+  two_mimicable_decisions:
+    - id: "ED1_v3_data_generation_mechanism"
+      existence_layer: "Hu_signature (mechanism in place)"
+      purity_layer: "first_author_signature path_agnostic (no scarcity admission when leading)"
+      decision_rule_leading: "数据 = 生成机制独特性，禁止 scarcity admission"
+      decision_rule_coauthor: "generation mechanism 在位，scarcity 可共存"
+      
+    - id: "ED2_v3_narrative_budget_to_counterintuitive"
+      existence_layer: "weak (may be absent in non-lead)"
+      strength_layer: "first_author_signature path_agnostic (with path-specific form)"
+      decision_rule: "写作前反直觉度排序分配段落长度"
+      form_branches: 3 # structural_demoted, causal_elevated, ml_theory_revision_call
+  
+  one_failure_mode:
+    - id: "EF1_v4_quantification_engine"
+      existence_layer_hu_signature: "必有某种从点估计向外的定量解释"
+      strength_layer_first_author_path_capped: "四级 Tier"
+      tier_classification:
+        GOLD: "chain OR counterfactual simulation (structural/causal enabled)"
+        GOLD_MEDIUM: "coefficient_to_actionable_value_mapping_matrix (ml path ceiling)"
+        PASS: "point_estimate + CI only (non-lead acceptable)"
+        FAIL: "无定量外推"
+      hard_fail: "Tier_FAIL → R3 坍塌"
+      soft_fail: "1st_author paper 停在 Tier_PASS → 未达首作标准"
+      decision_rule: "首作论文必 ≥ Tier_GOLD_MEDIUM; method_path 允许时追求 GOLD"
+  
+  closed_loop_v1_4: |
+    Hu_signature spine (existence, cross-position):
+      EM1 analytic structure → EM2 identification+dual defense → EM3 independent validation →
+      ED1 mechanism in place → [ED2 weak at existence] → EF1 some quantification
+    
+    first_author_path_agnostic (uniform when leading):
+      EM1 policy_prescription_naming
+      ED1 purity (no scarcity)
+      ED2 counterintuitive narrative concentration
+      A4 preempt ≥55% coverage
+      B2 contribution count=3
+      EF1 ≥ Tier_GOLD_MEDIUM
+    
+    first_author_path_capped (method ceiling limits peak execution):
+      EM1 analytic_unit naming (structural>causal>ml)
+      EF1 GOLD vs GOLD_MEDIUM (structural/causal>ml)
+
+# ------------------ Framework Revisions ------------------
+
+framework_revisions_this_card:
+  - revision_id: "REV-007"
+    target: "first_author_signature internal sublayering"
+    status: "COMMITTED"
+    structure: |
+      path_agnostic (uniform regardless of method): ED1 purity / ED2 concentration / A4 coverage / B2 count
+      path_capped (method architecture ceiling): EM1 analytic_naming / EF1 strength
+  - revision_id: "REV-008"
+    target: "EM1 naming double-sublayer decomposition"
+    status: "COMMITTED"
+    structure: |
+      analytic_unit_naming_sublayer (path_capped)
+      policy_prescription_naming_sublayer (path_agnostic)
+  - revision_id: "REV-009"
+    target: "A4 strong% threshold relaxation"
+    status: "COMMITTED"
+    change: "60% → 55% (was over-fit to Tightening; Retrials 60%, Supplier 59% both borderline)"
+  - revision_id: "REV-010"
+    target: "journal_publisher_era as fingerprint variable"
+    status: "CANDIDATE"
+    observation: "POM-Wiley vs POM-SAGE potential structural differences"
+    needs: "WeStore (POM-SAGE) as 2nd datapoint"
+
+# ------------------ POM-SAGE Fingerprint Seed ------------------
+
+journal_fingerprint_contribution:
+  target_journal: "POM-SAGE era (post-2024)"
+  features_observed_n1:
+    - "single_paragraph_abstract (8 micro-moves)"
+    - "8_paragraph_intro (theory_first × ml combo)"
+    - "title_Noun_under_Condition_Evidence_from_Setting"
+    - "1_section_merger (fewer than Wiley era)"
+    - "implications_as_standalone_section_6 (novel)"
+    - "medium_methodology_pedagogy"
+  comparison_to_POM_Wiley:
+    title_pattern: "Effect_of_X_on_Y (no colon) → Noun_under_Condition (colon+badge)"
+    section_mergers: "2 → 1"
+    pedagogy_intensity: "strong (new method) → medium (known method)"
+    publisher_note: "POM shifted from Wiley to SAGE in 2024"
+  aggregation_status: "POM-SAGE n=1; POM-Wiley n=1; total POM=2 but split across eras"
+
+# ------------------ Copyright Compliance ------------------
+
+copyright_compliance:
+  max_quote_words_used: 0
+  max_quotes_per_source_used: 0
+  inferred_tags_count: 22
+  paraphrase_coverage_percent: 100
+  wish_words_detected: 0
+  quote_budget_in: 1
+  quote_budget_out: 1
+  quote_budget_status: "fully preserved across 4 cards, 0 direct quotes"
+
+# ------------------ Next-Card Recommendations ------------------
+
+next_card_recommendations:
+  strongest_priority_from_remaining:
+    candidate: "WeStore or AppStore (Hu 1st, POM-SAGE 2024)"
+    rationale: |
+      CRITICAL TESTS enabled:
+      1. BC12 POM-Wiley vs SAGE effect (2nd POM-SAGE sample for direct comparison with Supplier)
+      2. EM1 analytic_naming path_capped hypothesis (WeStore is structural, should REACTIVATE strong naming)
+      3. BC9 method_path ceiling (structural expected to show strong analytic naming contra ml Supplier)
+      4. Second structural sample validates form_branches in EM3 structural branch
+      5. REV-010 POM-SAGE structural pattern confirmation
+  alternative:
+    candidate: "Service Chains Standardization (Hu 2nd, MSOM 2022)"
+    rationale: |
+      Tests:
+      1. Second non-lead sample (validates first_author_signature distinction)
+      2. Second MSOM sample (validates MSOM fingerprint)
+      3. New method (panel FE + IV) - 4th method path entry
+    trade_off: "single-card value high but doesn't resolve BC12 which is priority_1 target"
+
+# ------------------ Card Metadata ------------------
+
+card_metadata:
+  extractor_version: "HuTacitExtractor v1.4"
+  extraction_mode: "single_paper_falsification_test"
+  verbosity: "batched"
+  extraction_rounds: 5
+  phases_executed: ["diagnose", "decompose_x7", "surface", "audit", "distill_three_layer", "handoff"]
+  candidate_patterns_surfaced: 25
+  confirmed_patterns_v1_4: 14
+  three_layer_patterns: 5
+  first_author_only_path_agnostic: 1
+  tier_C_candidates: 7
+  tier_D_demoted: 2
+  boundary_cases_closed: 6
+  boundary_cases_partial: 2
+  boundary_cases_pending: 4
+  framework_revisions_committed: 4
+  red_line_GOLD_count: 5
+  red_line_PASS_count: 3
+  session_continuation: "from Retrials+Tightening+Delegation session"
+  architectural_milestone: "v1.3 → v1.4 three-layer persistence (path_agnostic vs path_capped)"

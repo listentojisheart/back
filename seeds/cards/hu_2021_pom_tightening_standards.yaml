@@ -1,0 +1,519 @@
+# ========================================================================
+# Hu Tacit Extractor v1.2 — Extraction Card
+# Paper: The Effect of Tightening Standards on Automakers' Non-compliance
+# Authors: Hu / Chopra / Chen
+# Journal: POM (Production and Operations Management)
+# Year: 2021
+# Status: Second card in hu-pattern-library/cards/
+# Session: AFP batched-mode, 5 rounds, continued from Retrials session
+# ========================================================================
+
+paper_id: "hu_2021_pom_tightening_standards"
+
+# ------------------ Diagnosis ------------------
+diagnosis_card:
+  title: "The Effect of Tightening Standards on Automakers' Non-compliance"
+  authors:
+    - "Kejia Hu (Vanderbilt Owen, 1st)"
+    - "Sunil Chopra (Kellogg)"
+    - "Yuche Chen (Vanderbilt Engineering)"
+  journal: "POM"
+  year: 2021
+  author_position: "first_author"
+  method_path: "causal_inference"
+  method_specific: "Regression Discontinuity (RD)"
+  opening_style: "theory_first"
+  opening_sub_style: "theory_abstraction_to_reversal"
+  material_access_level: "pdf_only"
+  confidence_on_auto_inferred: 0.95
+  flags:
+    - "POM_single_paragraph_abstract"
+    - "coauthor_structure_senior_OM_plus_domain_engineer"
+    - "heterogeneity_baked_into_RQ_via_H2_H3"
+    - "method_pedagogy_appendix_A_entire_RDD_tutorial"
+    - "main_effect_NOT_demoted_because_counterintuitive"
+    - "gap_statement_as_three_barriers_inverted_data_asset"
+
+# ------------------ Contrast Axes (vs prior card) ------------------
+contrast_vs_prior_cards:
+  vs_retrials_2022_msom:
+    path: "structural → causal_inference"
+    opening: "phenomenon_first → theory_first"
+    journal: "MSOM → POM"
+    coauthor: "two_PhD_advisors → senior_OM + domain_engineer"
+    main_effect_role: "demoted_to_setup → elevated_to_focus"
+    heterogeneity_dims: "5 (random-coef) → 2 (interaction terms)"
+
+# ------------------ 7-Phase Evidence (Condensed Pointers) ------------------
+
+phase_1_phenomenon_anchoring:
+  hook_type: "theory_abstraction"
+  first_sentence_pattern: "theory-statement-then-reversal"
+  industry: "EU automotive / NOx emissions / Euro 3-5 standards"
+  stakes_ladder_depth: 3
+  stakes_ladder_structure: "regulator_intent → agent_response → social_cost"
+  stakes_ladder_type: "principal_agent_ladder (vs Retrials: customer-POV-ladder)"
+  gap_claim_style: "three_barriers_inverted_data_asset"
+  gap_barriers_enumerated:
+    - "data_scarcity (firms unwilling to admit non-compliance)"
+    - "multi_round_quantified_regulation_requirement"
+    - "supplementary_info_for_controls"
+  terminology_status: "analytic_unit_invention (maker-type) — NOT twin-coined-pair"
+  borrowed_term: "danger zone (Chen 2001, Shimshack 2014)"
+
+phase_2_data_foundation:
+  data_source_name: "on-road remote sensing, Duebendorf-Zurich road"
+  data_provider: "environmental research sensor installation"
+  data_N: 148837
+  automakers_N: 42
+  time_span: "2000-2014 (15 years, spanning 3 tightening rounds)"
+  data_source_count: 4
+  data_sources_list:
+    - "on-road emissions (remote sensing)"
+    - "EU vehicle sales catalog"
+    - "EU vehicle registration"
+    - "EU emission standards"
+  uniqueness_claim_type: "system_design (NOT data_scarcity)"
+  uniqueness_mechanism_layers:
+    - "off-lab on-road measurement breaks regulator-firm information asymmetry"
+    - "multi-round tightening generates pre/post exogenous shocks"
+    - "4-source linkage enables covariate controls"
+  data_declaration_position:
+    intro_paragraph: 5
+    preconditions_completed:
+      - "theory_abstraction_hook"
+      - "RQ_with_main_argument_preview"
+      - "empirical_setting_layout"
+      - "industry_observation_anomaly"
+    note: "confirms REV-002 pattern (deferred past problem setup)"
+  exogenous_variation_sources:
+    primary: "upcoming standard limit unknown prior to announcement"
+    secondary: "engine system complexity prevents precise mean targeting"
+
+phase_3_method_alignment:
+  primary_method: "Regression Discontinuity (RD)"
+  method_novelty_in_OM: "flagged (Ho 2017 + Terwiesch 2019 cited for OM-suitability)"
+  identification_structure: "explicit_three_element_checklist"
+  identification_elements:
+    - "assignment_variable (V_ij = avg emissions prior to next standard announcement)"
+    - "threshold (L_j+1 = upcoming standard limit)"
+    - "outcome_variable (MP_ij = probability of overshooting)"
+  core_assumption: "imprecise_control_over_assignment_variable"
+  assumption_defense_style: "dual_defense"
+  assumption_defense_layers:
+    precedent:
+      - "Lee 2008 (vote share)"
+      - "Chiang 2009 (school assessment)"
+      - "Buettner 2006 (implicit marginal tax)"
+      - "Card et al. 2008 (reverse-RD tipping point)"
+      - "Matsudaira 2008 (test score)"
+    empirical_test:
+      - "McCrary 2008 density test"
+      - "Lee-Lemieux 2010 covariate continuity test"
+  theory_scaffold: "regulation_compliance_theory (Miller et al. 2020, three forces)"
+  moderators_structure: "single_force_gradient (both H2/H3 amplify economic force)"
+  linear_regression_choice_defense: "parametric linear cited from Hahn 2001 / Porter 2003 / Lee-Lemieux 2010"
+  methodology_pedagogy: "Appendix A = full RDD step-by-step tutorial"
+
+phase_4_exploratory_depth:
+  heterogeneity_dimensions: 2
+  heterogeneity_baked_in_via: "hypothesis_structure (H2/H3 interaction terms)"
+  main_effect_role: "elevated (counterintuitive finding = its own novelty)"
+  mechanism_validation_style: "alternative_explanation_statistical_exclusion"
+  mechanism_validation_artifact: "Tables A8-A10 show treated group boosts emissions beyond pre-treatment level (excludes regression-to-mean)"
+  goodness_of_fit_check: "R-squared only (0.386-0.419); no OOS CV (RDD convention)"
+  robustness_check_classes: 4
+  robustness_check_list:
+    - "locality parameter h ∈ [0.1, 1.0] step 0.1 (Tables A3-A4)"
+    - "alternative assignment variable specification (Table A5)"
+    - "polynomial order via AIC (Table A6)"
+    - "donut hole RD (Table A7)"
+  counterfactual_scenarios: 0
+  quantification_engine_type: "multiplicative_magnitude_chain"
+  quantification_chain:
+    - "3.4% treatment effect"
+    - "× 284M EU vehicles = 9.7M excess non-compliant"
+    - "× 84.7% overshooting prior level = 8.2M"
+    - "× 442 gal fuel × 3.79 kg/gal × 0.32 g/kg = 4.40 kilotons extra NOx"
+  quantification_reproducibility: "footnotes 14 and 17 provide full formulas"
+  quantified_numbers_count: 6
+
+phase_5_implication_crystallization:
+  contribution_enumeration_style: "explicit_three_fold (three-fold)"
+  audiences_addressed: 3
+  audiences:
+    - "academic_empiricist (first causal confirmation + RDD for OM)"
+    - "policymaker (EU/US regulators + 7 concrete monitoring tools)"
+    - "private_sector_manager (cross-industry: Wells Fargo / KPMG / Shanlu)"
+  number_repetition_locations: ["results_section", "discussion_section", "conclusion"]
+  number_repetition_count: 3
+  practical_relevance_evidence_form: "cross_industry_analog_ladder (vs Retrials: named_entity_already_interested)"
+  industry_uptake_signal: "EU NEDC test replaced Sept 2017 (policy response as uptake proxy)"
+  framework_extensibility_claim: "cross_industry + cross_regulatory_object"
+  framework_extensibility_support: "3 concrete analog cases (Wells Fargo / KPMG / Shanlu)"
+  future_research_directions_listed: 4
+
+phase_6_structured_assembly:
+  title_pattern: "The Effect of X on Y (noun-phrase declarative)"
+  title_verb_signature: "nominalized (not gerund)"
+  title_tension_display: "implicit in X→Y relation"
+  abstract_format: "POM_single_paragraph"
+  abstract_micro_moves: 8
+  abstract_micro_move_sequence:
+    - "RQ_statement"
+    - "empirical_claim_of_causal_confirmation"
+    - "setting_with_data_N"
+    - "method_statement (RD)"
+    - "main_finding"
+    - "moderator_findings"
+    - "dual_audience_implication"
+    - "prescription (pair tightening with monitoring)"
+  intro_paragraph_count: 10
+  intro_paragraph_rhythm: "one_paragraph_one_action"
+  intro_sequence:
+    - "theory_abstraction_hook"
+    - "RQ_statement_with_main_argument_preview"
+    - "empirical_setting_layout"
+    - "industry_observation_anomaly"
+    - "method_statement_with_data_scope (data declaration here)"
+    - "RD_core_assumption_preview"
+    - "results_preview"
+    - "contribution_preview_first_to"
+    - "theory_bridge"
+    - "paper_roadmap"
+  data_declaration_position: "intro_paragraph_5 (after setup, with method)"
+  section_structure: "POM_standard_with_mergers"
+  section_merger_examples:
+    - "Section 2: Literature + Hypotheses combined"
+    - "Section 3: Empirical Setting + Methodology combined"
+
+phase_7_review_process:
+  extraction_mode: "inferred_only (pdf_only)"
+  confidence_ceiling: 0.6
+  reviewer_personas_simulated: 5
+  personas_list:
+    - "P1_Methodologist_RDD_expert"
+    - "P2_Domain_Skeptic_auto_industry"
+    - "P3_Theoretical_Critic_compliance_theory"
+    - "P4_Policy_Reviewer_POM"
+    - "P5_OM_Journal_Editor_boundary"
+  inferred_objections_total: 14
+  objections_with_strong_preemption: 10
+  objections_with_medium_preemption: 1
+  objections_without_preemption: 3
+  preemption_coverage_percent: 79
+  preemption_style: "structural_not_argumentative"
+  preemption_artifacts:
+    - "Appendix_A_RDD_pedagogy"
+    - "Section_3.2.2_three_element_dedicated_segment"
+    - "Section_4.1_assumption_check_dedicated_section"
+    - "Section_4.4_four_robustness_classes"
+    - "Footnotes_14_17_reproducible_magnitude_formulas"
+  main_effect_demoted_to_setup: false
+  main_effect_demotion_reason_absent: "main_effect_itself_counterintuitive"
+  parked_low_confidence_observations:
+    - "submission_workshop_trail (conf 0.3)"
+    - "RR_round_count_inferred_1 (conf 0.4)"
+    - "Appendix_A_origin_possibly_moved_from_main_text (conf 0.35)"
+  weak_preemption_items:
+    - "O2.2_Euro_3_5_three_rounds_long_term_trend"
+    - "O3.2_H2_H3_independence_from_same_economic_force"
+
+# ------------------ Candidate Patterns (after cross-card re-tiering) ------------------
+
+candidate_patterns:
+  final_tier_S_repeatable_moves:
+    - id: "EM1_v2_analytic_unit_invention"
+      cross_card_freq: 2
+      discriminative_power: "Hu_signature"
+      phases_touched: [1, 3]
+    - id: "EM2_v2_identification_paragraph_with_dual_defense"
+      cross_card_freq: 2
+      discriminative_power: "OM_general_threshold_plus_Hu_execution_rigor"
+      phases_touched: [3]
+    - id: "EM3_v2_independent_mechanism_validation_block"
+      cross_card_freq: 2
+      discriminative_power: "Hu_signature"
+      form_branches:
+        structural: "ecological_narrative_triangulation"
+        causal_inference: "alternative_explanation_statistical_exclusion"
+      phases_touched: [4]
+
+  final_tier_A_mimicable_decisions:
+    - id: "ED1_v2_data_uniqueness_via_generation_mechanism"
+      cross_card_freq: 2
+      discriminative_power: "Hu_signature"
+      phases_touched: [2]
+    - id: "ED2_v2_narrative_budget_to_counterintuitive_element"
+      cross_card_freq: 2
+      discriminative_power: "Hu_signature"
+      phases_touched: [4, 6]
+    - id: "A1_v2_external_evidence_of_practical_relevance"
+      cross_card_freq: 2
+      discriminative_power: "Hu_signature"
+      form_branches:
+        MSOM: "named_entity_already_interested"
+        POM: "cross_industry_analog_ladder"
+      phases_touched: [5]
+    - id: "A4_structural_reviewer_preemption"
+      cross_card_freq: 2
+      discriminative_power: "Hu_signature"
+      phases_touched: [3, 6, 7]
+    - id: "S1prime_analytic_unit_invention"
+      note: "absorbed into EM1_v2"
+
+  final_tier_B_structural_cross_verified:
+    - id: "B1_intro_one_paragraph_one_action"
+      cross_card_freq: 2
+      paragraph_count_path_dependent:
+        phenomenon_first: 7
+        theory_first: 10
+    - id: "B2_triple_contribution_explicit"
+      cross_card_freq: 2
+    - id: "B2bis_triple_audience"
+      cross_card_freq: 2
+    - id: "B2tri_number_repetition_across_3_plus_sections"
+      cross_card_freq: 2
+      section_set_journal_dependent: true
+    - id: "B2quad_future_research_4_directions"
+      cross_card_freq: 2
+    - id: "B3_stakes_three_tier_ladder"
+      cross_card_freq: 2
+      ladder_content_path_dependent: true
+
+  tier_C_candidates_pending_third_card:
+    - id: "A6_moderators_as_single_force_gradient"
+      first_appearance: "Tightening"
+      hypothesis: "theory_first_path_specific"
+    - id: "A7_methodology_pedagogy_as_preemption"
+      first_appearance: "Tightening"
+      trigger_condition: "new_method_in_target_journal"
+    - id: "A8_framework_extensibility_with_concrete_analog_set"
+      first_appearance: "Tightening"
+      hypothesis: "possibly_Hu_signature"
+    - id: "A9_section_merger_as_structural_preemption"
+      first_appearance: "Tightening"
+      hypothesis: "POM_specific_or_journal_conditional"
+    - id: "B6_gap_as_inverted_data_asset_list"
+      first_appearance: "Tightening"
+      hypothesis: "causal_inference_path_specific"
+    - id: "B7_title_pattern_path_dependent"
+      first_appearance: "cross_card_derived"
+      validated_branches:
+        phenomenon_first: "gerund_plus_colon_plus_tension_pair"
+        theory_first_causal: "noun_phrase_Effect_of_X_on_Y"
+
+  demoted_tier_D:
+    - id: "EM1_v1_coined_twin_terminology_spine"
+      reason: "Retrials_specific_absorbed_into_EM1_v2"
+    - id: "B5_structural_plus_cross_validation_hybrid"
+      reason: "structural_path_specific_no_cross_path_applicability"
+
+# ------------------ Confirmed Patterns (now COMMITTED after cross_card=2) ------------------
+
+confirmed_patterns:
+  - "EM1_v2_analytic_unit_invention"
+  - "EM2_v2_identification_paragraph_with_dual_defense"
+  - "EM3_v2_independent_mechanism_validation_block"
+  - "ED1_v2_data_uniqueness_via_generation_mechanism"
+  - "ED2_v2_narrative_budget_to_counterintuitive_element"
+  - "A1_v2_external_evidence_of_practical_relevance"
+  - "A4_structural_reviewer_preemption"
+  - "B1_intro_one_paragraph_one_action"
+  - "B2_triple_contribution_explicit"
+  - "B2bis_triple_audience"
+  - "B2tri_number_repetition_across_3_plus_sections"
+  - "B2quad_future_research_4_directions"
+  - "B3_stakes_three_tier_ladder"
+
+# ------------------ Red-Line Audit ------------------
+
+red_line_audit:
+  R1_unique_data_generation_mechanism:
+    verdict: "GOLD"
+    note: "remote-sensing + multi-round tightening + 4-source linkage"
+  R2_identification_hardcoded:
+    verdict: "GOLD"
+    note: "dedicated section + assumption testing + methodology appendix"
+  R3_quantified_implication:
+    verdict: "GOLD"
+    numbers_count: 6
+    quantification_engine: "multiplicative_magnitude_chain_with_footnote_formulas"
+  R4_heterogeneity_mandatory:
+    verdict: "PASS"
+    dimensions: 2
+    path_note: "meets POM causal-inference minimum but below MSOM structural GOLD threshold"
+  R5_industry_specificity:
+    verdict: "GOLD"
+    note: "EU auto, NOx, Euro 3-5, NEDC, Duebendorf-Zurich, 7 named regulatory tools"
+  R6_not_pure_qualitative:
+    verdict: "PASS"
+  R7_target_journal_paradigm:
+    verdict: "GOLD (POM)"
+  R8_single_main_method_path:
+    verdict: "GOLD"
+    note: "RDD only; all alternatives serve as robustness"
+  summary: "6 GOLD + 2 PASS + 0 BORDERLINE + 0 FAIL"
+
+# ------------------ Boundary Cases for Aggregation ------------------
+
+boundary_cases:
+  - id: "BC1_data_uniqueness_definition"
+    status: "CONFIRMED cross_card=2"
+    commit_note: "REV-001 committed"
+  - id: "BC2_intro_data_declaration_position"
+    status: "CONFIRMED cross_card=2"
+    commit_note: "REV-002 committed with refined wording"
+  - id: "BC3_ML_demotion_as_red_line_8_avoidance"
+    status: "N/A (no ML in Tightening)"
+  - id: "BC4_gap_statement_style_path_dependency"
+    status: "PENDING (hypothesis: three_barriers for causal_inference, borrowed_admission for structural)"
+    test: "third card from different path combination"
+  - id: "BC5_ED2_conditionality_on_main_effect_intuitiveness"
+    status: "CONFIRMED as conditional rule cross_card=2"
+    commit_note: "ED2 upgraded to narrative_budget_to_counterintuitive"
+  - id: "BC6_R4_heterogeneity_threshold_journal_path_conditional"
+    status: "HYPOTHESIS (POM=2 min, MSOM_structural=3+ min)"
+    test: "third card to confirm threshold pattern"
+  - id: "BC7_framework_extensibility_form"
+    status: "PENDING (method_extensibility vs setting_extensibility)"
+  - id: "BC8_section_merger_POM_specific_or_general"
+    status: "PENDING (third card needed)"
+
+# ------------------ Executable Summary (Six-Item Closed Loop v1.2) ------------------
+
+executable_summary:
+  version: "v1.2 (cross-path generalized)"
+  three_repeatable_moves:
+    - id: "EM1_v2_analytic_unit_invention"
+      essence: "把文献里模糊的分析单元替换为自己定义的可直接入 model 的单位"
+      cross_path_robust: true
+      failure_mode: "沿用文献单位致测量与 model 错位"
+    - id: "EM2_v2_identification_with_dual_defense"
+      essence: "方法章节专段逐元素 map 识别来源，每个强假设同挂 precedent + empirical testability"
+      cross_path_robust: true
+      failure_mode: "只挂一条腿→reviewer 攻击另一条"
+    - id: "EM3_v2_independent_mechanism_validation"
+      essence: "主效应之外必有独立证据段证明非 artifact；形态由 method path 决定，存在必须"
+      cross_path_robust: true
+      form_branches:
+        structural: "ecological narrative triangulation"
+        causal_inference: "alternative-explanation statistical exclusion"
+      failure_mode: "无独立 validation→reviewer 把显著 coefficient 读成 sampling artifact"
+  two_mimicable_decisions:
+    - id: "ED1_v2_data_generation_mechanism"
+      essence: "评估数据看生成机制独特性（系统结构 / 监管周期 / 多源链接），不看稀缺性或规模"
+      cross_path_robust: true
+    - id: "ED2_v2_narrative_budget_to_counterintuitive"
+      essence: "叙事资源向反直觉度最高的证据块集中；不是主效应必降也不是必升"
+      cross_path_robust: true
+      decision_rule: "先做反直觉度排序，再分配段落长度"
+  one_failure_mode:
+    - id: "EF1_v2_quantification_engine_absent"
+      essence: "没有一条可独立复核的从系数到社会量级的路径"
+      cross_path_robust: true
+      acceptable_forms:
+        - "counterfactual scenarios (Retrials)"
+        - "multiplicative magnitude chain with footnote formulas (Tightening)"
+      failure_judge: "Discussion/Conclusion 只有定性 implication 无系数×规模推导"
+  closed_loop_note: |
+    六件套 v1.2 闭环（跨路径通用版）:
+    EM1 给测量单位 →
+    EM2 让单位与识别咬合 →
+    EM3 让 effect 非 artifact →
+    ED1 保证地基承重 →
+    ED2 保证承重的是 novelty →
+    EF1 保证 novelty 能被读者带出论文外用
+    任一环缺失诱发后续环权重坍缩。
+
+# ------------------ Framework Revisions Triggered / Confirmed ------------------
+
+framework_revisions_from_this_card:
+  - revision_id: "REV-001"
+    target: "Step 1 framework · Red Line 1 wording"
+    status: "COMMITTED (cross_card_freq=2)"
+    final_wording: "不写没有独特数据生成机制支撑的论文"
+    replaces: "不写没有 proprietary / unique data 支撑的论文"
+  - revision_id: "REV-002"
+    target: "Step 1 framework · Intro data declaration position"
+    status: "COMMITTED (cross_card_freq=2) with refined wording"
+    final_wording: "数据声明出现在 RQ 完成之后、与方法声明同段或其后"
+    replaces: "Intro 第 2 段必然引入独特数据源声明"
+  - revision_id: "REV-003"
+    target: "Six-item essence field structure"
+    status: "CANDIDATE (cross_card_freq=1)"
+    proposal: |
+      essence 字段从单一规则升级为条件树:
+      根节点 = 抽象 MOVE
+      叶节点 = path-specific 实例化
+      对齐 EM3/ED2/EF1/A1 的 form_branches 结构
+    pending_third_card: true
+
+# ------------------ POM Fingerprint Seed (for journal-pattern-library) ------------------
+
+journal_fingerprint_contribution:
+  target_journal: "POM"
+  features_observed_n1:
+    - "single_paragraph_abstract (≥7 micro-moves compressed)"
+    - "section_mergers (Lit+Hyp; Setting+Method)"
+    - "methodology_pedagogy_appendix_encouraged_for_new_methods"
+    - "title_noun_phrase_Effect_of_X_on_Y"
+  aggregation_status: "n=1, insufficient; needs ≥5 POM papers for fingerprint commit"
+
+# ------------------ Copyright Compliance ------------------
+
+copyright_compliance:
+  max_quote_words_used: 0
+  max_quotes_per_source_used: 0
+  inferred_tags_count: 16
+  paraphrase_coverage_percent: 100
+  wish_words_detected: 0
+  quote_budget_in: 1
+  quote_budget_out: 1
+  quote_budget_status: "fully preserved across Retrials + Tightening, 2 cards with 0 direct quotes"
+
+# ------------------ Next-Card Recommendations ------------------
+
+next_card_recommendations:
+  recommended_next_paper_criteria:
+    purpose: "validate tier_C_candidates + trigger REV-003 commit"
+    preferred_combination:
+      author_position: "first_author (maintain comparability)"
+      method_path: "field_experiment OR DID"
+      opening_style: "hybrid (test BC4 gap style dependency)"
+      journal: "MS empirical OM (test BC6 heterogeneity threshold; test BC8 section structure)"
+      rationale: |
+        third card should maximize variation on uncovered dimensions:
+        - new method path (neither structural nor RDD)
+        - new journal (neither MSOM nor POM)
+        - tests whether BC4/BC6/BC7/BC8 resolve into path rules or stay Hu-general
+  expected_cross_validation_targets:
+    - "EM1_v2 analytic_unit_invention — expected STABLE"
+    - "EM2_v2 identification_dual_defense — expected STABLE"
+    - "EM3_v2 mechanism_validation — expected to reveal third form_branch"
+    - "ED1_v2 data_generation_mechanism — expected STABLE"
+    - "ED2_v2 narrative_budget — expected STABLE rule"
+    - "EF1_v2 quantification_engine — expected to reveal third acceptable form"
+    - "A1_v2 external_practical_evidence — expected to reveal third form"
+    - "Tier_C 6 candidates — expected promotion or demotion"
+
+# ------------------ Card Metadata ------------------
+
+card_metadata:
+  extractor_version: "HuTacitExtractor v1.2 (post-patch ABC applied in session)"
+  extraction_mode: "single_paper"
+  verbosity: "batched"
+  extraction_rounds: 5
+  phases_executed: ["diagnose", "decompose_x7", "surface", "audit", "distill", "handoff"]
+  candidate_patterns_surfaced: 22
+  confirmed_patterns_committed: 13
+  tier_C_candidates_registered: 6
+  tier_D_demoted: 2
+  boundary_cases_registered: 8
+  boundary_cases_confirmed: 2
+  boundary_cases_pending: 4
+  framework_revisions_committed: 2
+  framework_revisions_candidate: 1
+  red_line_GOLD_count: 6
+  red_line_PASS_count: 2
+  session_continuation: "from Retrials MSOM session"

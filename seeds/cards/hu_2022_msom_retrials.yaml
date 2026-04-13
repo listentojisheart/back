@@ -1,0 +1,264 @@
+# ========================================================================
+# Hu Tacit Extractor v1.0 — Extraction Card
+# Paper: Understanding Customer Retrials in Call Centers (Hu, Allon, Bassamboo)
+# Journal: MSOM
+# Status: First card in hu-pattern-library/cards/
+# Generated: AFP Auto-Flow Phase 7 · Step 7.1
+# ========================================================================
+
+paper_id: "hu_2022_msom_retrials"
+
+# ------------------ Diagnosis ------------------
+diagnosis_card:
+  title: "Understanding Customer Retrials in Call Centers: Preferences for Service Quality and Service Speed"
+  authors:
+    - "Kejia Hu (Vanderbilt Owen, 1st)"
+    - "Gad Allon (Wharton / formerly Kellogg)"
+    - "Achal Bassamboo (Kellogg)"
+  journal: "MSOM"
+  year: 2022
+  author_position: "first_author"
+  method_path: "structural_modeling"
+  opening_style: "phenomenon_first"
+  opening_sub_style: "customer_POV_narrative"
+  material_access_level: "pdf_only"
+  confidence_on_auto_inferred: 0.95
+  flags:
+    - "canonical_MSOM_structured_abstract_detected"
+    - "two_coauthors_are_PhD_advisors"
+    - "hybrid_field_design_flagged"
+    - "heterogeneity_baked_into_RQ"
+
+# ------------------ 7-Phase Evidence (Condensed Pointers) ------------------
+# Full evidence blocks are preserved in the extraction session transcript;
+# below are condensed pointers per phase for fast lookup.
+
+phase_1_phenomenon_anchoring:
+  hook_type: "experiential_narrative"
+  industry: "call centers / medium-sized Israeli bank / hybrid service system"
+  practice_theory_misalignment_layers: 3
+  coined_terminology: ["congestion retrials", "fitness retrials"]
+  terminology_coined_before_RQ: true
+  stakes_ladder: ["customer_POV", "business_loss", "industry_KPI"]
+  gap_claim_style: "gap-via-borrowed-admission (cites Shen 2010)"
+
+phase_2_data_foundation:
+  data_source_name: "call-by-call records, medium-sized Israeli bank"
+  data_provider: "Service Enterprise Engineering (SEE) Lab at Technion"
+  data_N: 1851621
+  time_span: "June 2013 – December 2013"
+  uniqueness_claim_type: "system_design (not data scarcity)"
+  exogenous_variation_source: "hybrid 3-queue sequential assignment"
+  multi_sided_structure: "customer(business/private) × service(3 groups) × event(online/offline/retrial)"
+
+phase_3_method_alignment:
+  primary_method: "random-coefficient dynamic structural model"
+  scope_innovation: "captures both online AND offline decisions (prior work: online only)"
+  identification_style: "dedicated identification paragraph (parameter→variation mapping)"
+  assumption_defense_style: "dual_defense (precedent + robustness_check)"
+  threat_response_matrix_style: "implicit but functionally equivalent"
+  discretization_choice: "5-second periods (following Yu 2016, Aksin 2013)"
+
+phase_4_exploratory_depth:
+  heterogeneity_dimensions: 5
+  heterogeneity_baked_in_via: "random-coefficient architecture (not post-hoc splits)"
+  mechanism_validation_style: "ecological_narrative_triangulation (not formal mediation)"
+  goodness_of_fit_check: "MSE on fitted vs observed"
+  out_of_sample_validation: "10-fold cross-validation (unusual in structural papers)"
+  robustness_checks: 3
+  robustness_checks_target: "3 distinct reviewer personas (Methodologist / Skeptic / Domain Expert)"
+  counterfactual_scenarios: 3
+  quantified_gains_pct: [14.4, 14.9, 13.9, 22.5, 15.0]
+
+phase_5_implication_crystallization:
+  contribution_enumeration_style: "explicit triple (First/Second/Third)"
+  audiences_addressed: 3
+  audiences: ["theorist", "empiricist", "practitioner + future_researcher"]
+  number_repetition_locations: ["abstract", "intro_preview", "results_section", "conclusion"]
+  industry_uptake_signal: "globally-renowned hotel chain"
+  industry_uptake_framing: "already interested (not 'will help')"
+  framework_extensibility_claimed: true
+  future_research_directions_listed: 4
+
+phase_6_structured_assembly:
+  title_pattern: "Understanding X in Y: [tension pair]"
+  title_verb_signature: "gerund (Understanding)"
+  abstract_MSOM_5_segment_compliance: "strict (70-100 words each)"
+  intro_paragraph_rhythm: "7 discrete paragraphs, each one action"
+  intro_sequence:
+    - "customer_POV_narrative_hook"
+    - "KPI_embed_quantified_source"
+    - "terminology_coining_bolded"
+    - "tradeoff_puzzle_construction"
+    - "budget_constraint_closure"
+    - "RQ_statement_with_gap_citation"
+    - "data_and_identification_combined"
+  data_declaration_position: "intro_paragraph_6 (NOT paragraph_2)"
+  data_declaration_note: "deferred until reader accepts problem worth studying"
+
+phase_7_review_process:
+  extraction_mode: "inferred_only (pdf_only)"
+  confidence_ceiling: 0.6
+  reviewer_personas_simulated: 5
+  inferred_objections_total: 10
+  objections_with_strong_preemption: 6
+  objections_with_medium_preemption: 4
+  objections_without_preemption: 0
+  preemption_coverage: "100%"
+  preemption_style: "structural_not_argumentative"
+  main_effect_demoted_to_setup: true
+  parked_low_confidence_observations:
+    - "response_letter_signature_style (conf 0.3)"
+    - "pre_submission_workshop_investment (conf 0.4)"
+
+# ------------------ Candidate Patterns (13) ------------------
+candidate_patterns:
+  S_tier:
+    - id: "hu_candidate_S1_coined_twin_terminology_as_unifying_spine"
+      phases_touched: [1, 3, 4, 5, 6]
+      Hu_distinctive_likelihood: "HIGH"
+    - id: "hu_candidate_S2_identification_paragraph_as_checklist"
+      phases_touched: [3]
+      Hu_distinctive_likelihood: "MEDIUM (path convention)"
+    - id: "hu_candidate_S3_heterogeneity_as_ecological_narrative"
+      phases_touched: [4]
+      Hu_distinctive_likelihood: "HIGH"
+  A_tier:
+    - id: "hu_candidate_A1_industry_uptake_as_practical_relevance"
+      phases_touched: [5]
+      Hu_distinctive_likelihood: "HIGH"
+    - id: "hu_candidate_A2_contribution_via_model_scope_expansion"
+      phases_touched: [3, 5]
+      Hu_distinctive_likelihood: "MEDIUM-HIGH"
+    - id: "hu_candidate_A3_data_equals_system_design"
+      phases_touched: [2]
+      Hu_distinctive_likelihood: "MEDIUM"
+    - id: "hu_candidate_A4_reviewer_preemption_structural_not_argumentative"
+      phases_touched: [6, 7]
+      Hu_distinctive_likelihood: "HIGH"
+    - id: "hu_candidate_A5_counterfactual_as_implication_engine"
+      phases_touched: [4, 5]
+      Hu_distinctive_likelihood: "MEDIUM"
+  B_tier:
+    - id: "hu_candidate_B1_intro_7_paragraph_discrete_rhythm"
+      phases_touched: [1, 6]
+    - id: "hu_candidate_B2_triple_contribution_triple_audience"
+      phases_touched: [5]
+    - id: "hu_candidate_B3_stakes_three_tier_ladder"
+      phases_touched: [1]
+    - id: "hu_candidate_B4_dual_assumption_defense"
+      phases_touched: [3]
+    - id: "hu_candidate_B5_structural_plus_cross_validation_hybrid"
+      phases_touched: [4]
+      Hu_distinctive_likelihood: "HIGH (if aggregation confirms)"
+
+# ------------------ Confirmed Patterns ------------------
+confirmed_patterns: []  # Aggregation threshold not yet reached (need ≥3 cards)
+
+# ------------------ Red-Line Audit ------------------
+red_line_audit:
+  R1_unique_data:
+    verdict: "BORDERLINE → PASS"
+    note: "triggered framework revision (data scarcity → generation mechanism)"
+  R2_identification_hardcoded:
+    verdict: "GOLD"
+  R3_quantified_implication:
+    verdict: "GOLD"
+    numbers_count: 7
+  R4_heterogeneity_mandatory:
+    verdict: "GOLD"
+    dimensions: 5
+  R5_industry_specificity:
+    verdict: "PASS"
+  R6_not_pure_qualitative:
+    verdict: "PASS"
+  R7_target_journal_paradigm:
+    verdict: "GOLD (MSOM)"
+  R8_single_main_method_path:
+    verdict: "PASS (ML demoted to auxiliary)"
+  summary: "3 GOLD + 4 PASS + 1 BORDERLINE; zero violations"
+
+# ------------------ Boundary Cases for Aggregation ------------------
+boundary_cases:
+  - id: "BC1_data_uniqueness_definition"
+    question: "Is Hu's 'unique data' claim generally anchored on generation mechanism rather than data scarcity?"
+  - id: "BC2_intro_data_declaration_position"
+    question: "Does Hu consistently defer data declaration past terminology+RQ in first-author papers?"
+  - id: "BC3_ML_demotion_as_red_line_8_avoidance"
+    question: "Does Hu recurrently demote supporting methods (ML, etc.) to avoid Red Line 8 violation?"
+
+# ------------------ Executable Summary (Six-Item Closed Loop) ------------------
+executable_summary:
+  three_repeatable_moves:
+    - id: "EM1_coined_terminology_spine"
+      essence: "Intro 第 3 段命名一对术语，让其贯穿后续 5 模块"
+    - id: "EM2_identification_checklist_paragraph"
+      essence: "Methodology 写专门段落，逐参数 map 数据变化源，每个强假设双重辩护"
+    - id: "EM3_heterogeneity_as_ecological_narrative"
+      essence: "每条异质性发现紧跟 why-this-makes-sense-in-practice 一段"
+  two_mimicable_decisions:
+    - id: "ED1_data_uniqueness_anchored_on_generation_mechanism"
+      essence: "评估数据看生成机制，不看稀缺性或规模"
+    - id: "ED2_main_effect_demoted_to_setup"
+      essence: "主效应符合直觉时降级为铺垫，把贡献叙事资源移交给 novelty"
+  one_failure_mode:
+    - id: "EF1_counterfactual_missing"
+      essence: "无 counterfactual 章节 → 无量化 implication → 红线 3 + 红线 7 同时坍塌"
+  closed_loop_note: |
+    六条经验构成相互支撑的闭环:
+    EM1 给脊骨 → EM2 让脊骨可被 reviewer 解剖 →
+    EM3 让脊骨有血肉 → ED1 保证脊骨长在承重地基上 →
+    ED2 保证脊骨承重的是 novelty 而非直觉 →
+    EF1 是脊骨缺失 counterfactual 关节时的整体坍塌信号
+
+# ------------------ Framework Revisions Triggered ------------------
+framework_revisions_from_this_card:
+  - revision_id: "REV-001"
+    target: "Step 1 framework · Red Line 1 wording"
+    from: "不写没有 proprietary / unique data 支撑的论文"
+    to: "不写没有独特数据生成机制支撑的论文"
+    triggered_by: "Phase 2 boundary case"
+    confidence_before_aggregation: 0.7
+  - revision_id: "REV-002"
+    target: "Step 1 framework · Phase 6 intro paragraph-2 data declaration"
+    from: "她 Intro 第 2 段必然引入独特数据源声明"
+    to: "她将数据声明推迟到 Problem → Stakes → Terminology → Tension → Constraint → RQ 完成之后"
+    triggered_by: "Phase 6 intro rhythm observation"
+    confidence_before_aggregation: 0.8
+
+# ------------------ Copyright Compliance ------------------
+copyright_compliance:
+  max_quote_words_used: 0
+  max_quotes_per_source_used: 0
+  inferred_tags_count: 18
+  paraphrase_coverage_percent: 100
+  wish_words_detected: 0
+  quote_budget_remaining: 1
+  quote_budget_status: "fully preserved, transferred to future cards"
+
+# ------------------ Next-Card Recommendations ------------------
+next_card_recommendations:
+  recommended_next_paper: "Tightening Standards (Hu/Chopra/Chen, POM)"
+  rationale: |
+    causal_inference path + theory_first opening —
+    maximizes variation on two key extraction variables,
+    enables rapid validation of which patterns are path-dependent
+    vs path-independent
+  expected_cross_validation_targets:
+    - "EM1 coined terminology — expected STABLE"
+    - "EM2 identification checklist — expected to SHAPE-SHIFT into threat-response matrix"
+    - "EM3 ecological heterogeneity — expected STABLE"
+    - "ED1 generation mechanism — expected STABLE"
+    - "ED2 main effect demotion — expected STABLE"
+    - "EF1 counterfactual failure — expected to SHAPE-SHIFT (policy counterfactual instead)"
+
+# ------------------ Card Metadata ------------------
+card_metadata:
+  extractor_version: "HuTacitExtractor v1.0"
+  extraction_mode: "single_paper"
+  extraction_rounds: 7
+  phases_executed: ["diagnose", "decompose_x7", "surface", "audit", "distill", "handoff"]
+  candidate_patterns_surfaced: 13
+  confirmed_patterns_produced: 0  # aggregation threshold not yet reached
+  boundary_cases_registered: 3
+  framework_revisions_proposed: 2

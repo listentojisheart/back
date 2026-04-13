@@ -1,0 +1,704 @@
+# ========================================================================
+# Hu Tacit Extractor v1.5 — Extraction Card
+# Paper: WeStore or AppStore: Customer Behavior Differences in
+#        Mobile Apps and Social Commerce
+# Authors: Hu / Karacaoglu
+# Journal: Production and Operations Management (POM-SAGE 2024-02-06)
+# Status: Fifth card in hu-pattern-library/cards/
+#         REACHES CORPUS_SIZE=5 MINIMUM_VIABLE_THRESHOLD
+#         Triggered v1.4 → v1.5 three-factor × three-layer EM1 architecture
+# ========================================================================
+
+paper_id: "hu_2024_pom_westore_or_appstore"
+
+diagnosis_card:
+  title: "WeStore or AppStore: Customer Behavior Differences in Mobile Apps and Social Commerce"
+  authors:
+    - "Kejia Hu (Oxford Saïd → Vanderbilt Owen at submission, 1st)"
+    - "Nil Karacaoglu (OSU Fisher)"
+  journal: "Production and Operations Management"
+  publisher_era: "POM-SAGE (post-2024)"
+  publication_date: "2024-02-06"
+  author_position: 1
+  method_path: "structural_modeling (sequential search model)"
+  method_specific: "sequential_search_Weitzman_Honka_Koulayev_style_fixed_plus_marginal_cost_separation"
+  opening_style: "phenomenon_first"
+  opening_sub_style: "industry_disruption_narrative"
+  material_access_level: "pdf_only"
+  confidence_on_auto_inferred: 0.95
+  flags:
+    - "FIFTH card — reaches minimum_viable_threshold"
+    - "FIRST POM-SAGE + structural combo"
+    - "SECOND POM-SAGE datapoint → BC12 resolved + REV-010 committed"
+    - "SECOND structural sample (validates EM3 structural form_branch)"
+    - "Intro-embedded Table 1 (topic-driven, not Hu-signature)"
+    - "WeStore as original coined word in title (title_layer naming signal)"
+    - "public dataset (JD 2020 MSOM Challenge) with proprietary analytic angle"
+    - "triggered v1.4 → v1.5 EM1 three-factor three-layer architecture"
+
+framework_test_role_v1_4_completion:
+  test_1_BC12_POM_SAGE_fingerprint:
+    prediction: "Share structural features with Supplier (1 merger, § 6 standalone, single abstract, title colon+suffix)"
+    observation: "CONFIRMED 2/2 POM-SAGE — REV-010 formally committed"
+    evidence:
+      abstract_format: "single_paragraph (2/2)"
+      section_mergers: "1 (2/2)"
+      standalone_ch_6: "2/2 (Supplier Implications / WeStore Counterfactual)"
+      title_colon_suffix: "2/2"
+      intro_paragraphs_8_9: "8-9 (both in POM-SAGE)"
+  test_2_EM1_analytic_naming_path_capped:
+    prediction: "Structural path should restore strong analytic_unit naming"
+    observation: "FAILS — WeStore analytic naming also WEAK (fixed/marginal cost borrowed from search theory)"
+    verdict: "path_capped single-factor hypothesis REJECTED → three-factor model (REV-011)"
+  test_3_structural_form_branches_stability:
+    prediction: "EM3 ecological_narrative + GoF+CV in WeStore"
+    observation: "CONFIRMED both features present (§ 5 factors discussion + in-sample GoF + OOS 10-fold CV)"
+    verdict: "structural branch stable across 2 cards"
+  test_4_EF1_GOLD_structural_reactivation:
+    prediction: "Counterfactual simulation at GOLD tier"
+    observation: "CONFIRMED — 2 counterfactuals (sharable-link + search-triggering) with per-customer profit quantification (0.6 CNY / 0.7 CNY)"
+    verdict: "structural path GOLD is STANDARD not ceiling; ml path ceiling = GOLD-MEDIUM"
+  test_5_corpus_size_5_achievement:
+    observation: "minimum_viable_library threshold met"
+
+contrast_vs_prior_cards:
+  vs_retrials_structural_1st_MSOM:
+    same_path: "structural"
+    same_position: "1st"
+    opening_sub_style_diff: "customer_POV → industry_disruption"
+    journal_diff: "MSOM → POM-SAGE"
+    crucial: "2nd structural+1st sample → form_branches stable"
+  vs_supplier_POM_SAGE_ml_1st:
+    same_era: "POM-SAGE"
+    same_position: "1st"
+    path_diff: "structural vs ml"
+    crucial: "2nd POM-SAGE → BC12 resolved"
+  vs_tightening_POM_Wiley_causal_1st:
+    same_journal_family: "POM"
+    era_diff: "POM-Wiley → POM-SAGE"
+    crucial: "POM internal era comparison + R4 threshold refinement"
+
+phase_1_phenomenon_anchoring:
+  hook_type: "phenomenon_first"
+  opening_sub_style: "industry_disruption_narrative"
+  first_sentence_pattern: "social_commerce_disruption_claim"
+  BC13_phenomenon_first_sub_styles:
+    styles_observed: ["customer_POV_narrative (Retrials)", "industry_disruption_narrative (WeStore)"]
+    tentative_hypothesis: "journal_level_driven (MSOM=customer_POV, POM=industry_level)"
+  stakes_ladder_depth: 3
+  stakes_ladder_structure: "retailer_decision → social_commerce_ecosystem → OM_method_bridge"
+  gap_claim_style: "first_to_X_plus_scope_narrowing"
+  gap_claim_form_branch: "FIFTH_form_detected (BC4 confirmed open classification)"
+  coined_terminology_analysis:
+    title_layer:
+      original: "WeStore (portmanteau/coined word)"
+      parallel: "AppStore (industry existing)"
+      verdict: "title_layer naming signal — first occurrence across cards"
+    analytic_layer:
+      status: "WEAK — fixed/marginal search cost borrowed from Honka 2014 / Koulayev 2014"
+      supplier_borrowed_terms: "social_commerce / WeChat mini-program"
+      verdict: "EM1 path_capped single-factor hypothesis FAILS"
+    policy_layer:
+      original: ["sharable-link coupon", "search-triggering coupon"]
+      verdict: "two original policy_prescription namings → first_author_signature path_agnostic CONFIRMED (5th card)"
+  naming_three_factor_analysis:
+    factor_1_topic_novelty: "social_commerce_vs_app_comparison is NEW but sequential search model is KNOWN"
+    factor_2_measurement_need: "fixed-marginal separation is parametric extension, not new unit"
+    factor_3_existing_theory_reuse: "search theory framework REUSED suppresses new analytic terminology"
+    verdict: "existing_theory_reuse dominant → analytic naming suppressed; policy layer free to create"
+  intro_embedded_table_observation: "Table 1 comparing mobile apps vs WeChat mini-programs appears in Intro § 2 — unique to WeStore across 5 cards"
+
+phase_2_data_foundation:
+  data_source_name: "JD.com 2020 MSOM Data-Driven Research Challenge + extended"
+  data_nature: "PUBLIC_DATASET (MSOM Challenge official release)"
+  data_N_clicks: 3354056
+  data_N_sessions: 871763
+  data_N_orders: 247842
+  data_N_customers: 328618
+  time_span: "March 2018 (single month aggregated)"
+  data_restructuring: "search session level + user × channel × product-category"
+  uniqueness_claim_type: "observation_completeness_plus_multi_channel_analytic_angle"
+  uniqueness_mechanism_layers:
+    - "clickstream completeness (both purchasers and non-purchasers)"
+    - "multi-channel concurrent observation (WeChat + App)"
+    - "search order and revisit patterns observable (vs aggregated in prior literature)"
+    - "channel assortment identical (natural controlled comparison)"
+  scarcity_admission_check:
+    status: "ABSENT"
+    note: "Public dataset but uniqueness argued via analytic_angle not data ownership"
+    significance: "CRITICAL PROOF — generation_mechanism ≠ proprietary"
+  ED1_purity_verdict: "REACTIVATED cross_card=5 (4/4 first-author, 1/1 non-lead hybrid)"
+  ED1_v4_double_dimension_evidence:
+    data_source_mechanism: "JD platform + PSM preprocessing for self-selection"
+    analytic_angle_mechanism: "multi-channel concurrent behavior comparison (novel research angle)"
+    verdict: "both dimensions present; first card to make analytic_angle explicit"
+  data_declaration_position:
+    rq_paragraph: 3-4
+    data_abstract_paragraph: 5  # "customer-level clickstream data"
+    data_concrete_location: "§ 3.1"
+    verdict: "REV-002 core rule 'after RQ' holds; cross_card=5 ROBUST"
+  exogenous_variation_sources:
+    primary: "concurrent WeChat/App availability provides channel-assortment-identical comparison"
+    secondary: "PSM creates similar samples across channels"
+
+phase_3_method_alignment:
+  primary_method: "sequential_search_structural_model"
+  auxiliary_preprocessing: "propensity_score_matching_for_channel_self_selection"
+  method_hierarchy_BC3_verdict: "GOLD — PSM is pre-processing not competing main; BC3 Hu global rule confirmed 5/5"
+  identification_structure: "explicit_identification_strategies_section_4_2"
+  identification_elements:
+    - "channel preference Θ_c identified via cross-channel purchase differentials"
+    - "fixed search cost κ identified via search_initiation vs no_search differential"
+    - "marginal search cost ξ identified via search_depth distribution"
+    - "noise σ identified via outcome variance"
+  EM2_v3_form_branch_verdict: "structural parameter_to_variation_map REPLICATED from Retrials → form_branch stable across 2 structural cards"
+  core_assumptions_count: 6
+  assumption_defense_style: "dual_defense (precedent × empirical_test)"
+  assumption_defense_precedents:
+    - "Weitzman 1979 (foundational sequential search)"
+    - "Honka 2014 (fixed + search cost estimation)"
+    - "Koulayev 2014 (consideration set formation)"
+    - "De los Santos 2012 (search strategy identification)"
+    - "Honka-Chintagunta 2017 (sequential vs simultaneous identification)"
+    - "Rosenbaum-Rubin 1985 (PSM foundational)"
+  assumption_defense_empirical_tests:
+    - "§ 3.3 model-free test: revisit + order pattern → sequential support"
+    - "§ 3.2 PSM covariate balance statistical tests"
+    - "in-sample goodness of fit"
+    - "out-of-sample 10-fold cross-validation"
+    - "single-unit demand fact (0.25%) + sensitivity"
+    - "channel exclusivity fact (0.5% switch) + sensitivity"
+  dual_defense_assumption_count: 6
+  methodology_pedagogy:
+    form: "medium_high"
+    instruments: ["§ 4 sequential search explanation", "Appendix likelihood detail"]
+    intensity_verdict: "POM × moderately-novel method for POM readers → medium-high pedagogy"
+
+phase_4_exploratory_depth:
+  main_result_type: "structural_parameter_estimates_with_channel_comparison"
+  full_sample_main_finding:
+    - "WeChat fixed search cost HIGHER than App"
+    - "WeChat marginal search cost LOWER than App"
+    - "WeChat: more browsing, more conversions"
+    - "High-spending customers: higher fixed AND marginal costs"
+  counterintuitive_rank:
+    L1_most_counterintuitive: "WeChat fixed_cost HIGHER + marginal_cost LOWER (inverse of social-context-eases-search intuition)"
+    L2: "high-spending customers have HIGHER search cost (not lower)"
+    L3: "cross-channel same-product-same-price yields different behavior"
+    L4_most_intuitive: "customers have channel preferences"
+  narrative_budget_allocation:
+    abstract_counterintuitive_placement: "front-loaded in abstract"
+    intro_placement: "Para 5 repeats counterintuitive finding"
+    results_mechanism_explanation: "§ 5 factors contributing discussion"
+    counterfactual_directly_leverages: "WeChat lowers fixed + App lowers marginal → based on inverse asymmetry"
+    verdict: "STRONGEST counterintuitive concentration across 5 cards"
+    form_branch_NEW: "counterintuitive_drives_counterfactual_design (structural 1st-author form_branch)"
+  ED2_v3_reactivation_verdict: "CONFIRMED 5th time; first_author path_agnostic ROBUST"
+  heterogeneity_dimensions: "3-4 (channel × historical_spending × search_timing + implicit product preference random-coef)"
+  R4_verdict: "PASS at structural threshold"
+  R4_threshold_revision_triggered: "WeStore 3-4 dims vs Retrials 5 dims → structural GOLD ≥5 may be over-fit; relax to ≥4"
+  mechanism_validation_style: "structural_form_branch: ecological_narrative + GoF_plus_CV"
+  mechanism_validation_instruments:
+    - "§ 5 factors contributing to cost differences (ecological_narrative_triangulation)"
+    - "in-sample goodness of fit"
+    - "out-of-sample 10-fold cross-validation"
+    - "alternative explanation exclusion (rational customer baseline ruled out)"
+  EM3_v3_structural_form_branch_stability: "CONFIRMED across 2 structural cards (Retrials + WeStore)"
+  B5_structural_CV_hybrid_rehabilitation: "UN-DEMOTED from tier D; now internal sub-feature of EM3_v3 structural form_branch"
+  robustness_check_classes: "multiple alternative explanation exclusions"
+  counterfactual_scenarios: 2
+  counterfactual_1: "sharable-link coupon in WeChat (lowers fixed cost)"
+  counterfactual_2: "search-triggering coupon in App (lowers marginal cost)"
+  quantification_engine_type: "counterfactual_policy_simulation_with_per_customer_profit"
+  quantification_examples:
+    - "0.6 CNY additional profit per WeChat customer @ 2 CNY referral discount"
+    - "0.7 CNY additional profit per App customer @ 1-2 CNY search-triggering coupon"
+    - "2 CNY and 1-2 CNY optimal coupon design"
+  EF1_v4_tier_classification: "Tier_GOLD"
+  EF1_path_capped_verdict: "structural 1st-author → GOLD is STANDARD (2/2 structural 1st-author both GOLD); ml ceiling = GOLD-MEDIUM"
+
+phase_5_implication_crystallization:
+  contribution_enumeration_style: "three_explicit_First_Second_Lastly"
+  contribution_count: 3
+  contribution_location: "Intro Para 8 (explicit numbering) + implicit recap in Conclusion"
+  B2_v2_verdict: "REACTIVATED cross_card=5 first_author path_agnostic CONFIRMED"
+  audiences_addressed: 3
+  audiences_structure: "academic_3_sub (omnichannel + search model + promotion design) + practitioners_retailers"
+  audiences_width_observation: "academic-deep-dive (3 sub-fields) vs previous cards' academic+industry+policymaker broad-block"
+  B2bis_cross_card_5_verdict: "CONFIRMED core MOVE ≥3 audiences stable; internal structure topic-dependent"
+  number_repetition_locations:
+    - "abstract (profit + coupon amounts)"
+    - "intro (0.6 CNY / 0.7 CNY in Para 6)"
+    - "§ 3.1 (data scale)"
+    - "§ 5 results"
+    - "§ 6 counterfactual quantification"
+    - "§ 7 conclusion"
+  number_repetition_count: 6
+  B2tri_cross_card_5_highest_confidence: true
+  practical_relevance_evidence_form: "industry_scale_statistics_plus_same_field_competitor_landscape"
+  A1_v3_form_branch_FIFTH:
+    branch_id: "industry_scale_stats_plus_same_field_competitor_landscape"
+    cited_companies: ["Instagram", "Pinterest", "Facebook", "Twitter", "WhatsApp", "Weee"]
+    scale_statistics: ["$474.8B social commerce 2020", "1B WeChat monthly users", "$250B mini-program transactions"]
+  A1_v3_open_classification_verdict: "5 form_branches; MOVE robust at Hu_signature ROBUST highest confidence"
+  framework_extensibility_claim_form: "dual_form (same_domain_cross_platform + method_extension)"
+  A8_form_branch_observation: "WeStore combines 2 forms simultaneously — extensibility can stack"
+  future_research_directions_listed: 4
+  B2quad_range: "3-5 directions, cross_card=5 stable"
+  policy_prescription_naming_strong: "sharable-link coupon + search-triggering coupon (2 original namings in § 6)"
+  EM1_policy_layer_first_author_path_agnostic_evidence: "5/5 cards with 1st-author all have policy_prescription naming"
+
+phase_6_structured_assembly:
+  title_pattern: "A_or_B_coined_choice_colon_subject_explanation"
+  title_fifth_form_detected: true
+  title_novelty: "A or B choice construct + original coined word (WeStore) — unique across 5 cards"
+  title_POM_SAGE_common_feature: "colon + suffix/badge (WeStore: subject_explanation; Supplier: Evidence from Setting)"
+  title_form_by_journal_era_path_opening:
+    MSOM_structural_phenomenon_customerPOV: "gerund+colon+tension_pair (Retrials)"
+    POM_Wiley_causal_theory: "Effect_of_X_on_Y no colon (Tightening)"
+    MS_causal_hybrid: "Concept_with_Y: An_Empirical_Analysis_of_Z (Delegation)"
+    POM_SAGE_ml_theory: "Noun_under_Condition: Evidence_from_Setting (Supplier)"
+    POM_SAGE_structural_phenomenon_industryDisrupt: "A_or_B_coined: Subject_Explanation (WeStore)"
+  BC12_POM_SAGE_title_commonality: "both 2 POM-SAGE use colon+suffix"
+  BC12_POM_Wiley_title_contrast: "POM-Wiley had no colon (Tightening)"
+  abstract_format: "POM_SAGE_single_paragraph"
+  abstract_micro_moves: 10
+  abstract_micro_move_count_range_refinement: "7-10 across cards (was 7-8)"
+  abstract_micro_move_sequence:
+    - "industry_context_social_commerce"
+    - "research_question_channel_differences"
+    - "method_sequential_search_model"
+    - "method_contribution_first_fixed_plus_marginal"
+    - "main_finding_WeChat_fixed_higher_marginal_lower"
+    - "heterogeneity_customer_characteristics_search_timing"
+    - "counterfactual_1_sharable_link"
+    - "counterfactual_2_search_triggering"
+    - "profitability_implication"
+    - "positioning_first_to_explore_social_vs_traditional"
+  intro_paragraph_count: 8
+  intro_paragraph_count_actually: "8-9 (roadmap implicit in Para 9)"
+  B1_three_factor_matrix:
+    MSOM_structural_phenomenon_customerPOV: 7
+    POM_Wiley_causal_theory: 10
+    MS_causal_hybrid: 10
+    POM_SAGE_ml_theory: 8
+    POM_SAGE_structural_phenomenon_industryDisrupt: 8-9
+  B1_three_factor_hypothesis: "Intro paragraphs = f(opening × path × journal_publisher_era); MSOM compresses, POM-Wiley/MS extends, POM-SAGE mid"
+  intro_sequence:
+    - "social_commerce_disruption_hook + AT&T-style concrete stats"
+    - "WeChat mini-program description + Table_1_embedded"
+    - "research_setting + competition context"
+    - "RQ_declaration"
+    - "method_plus_data_abstract"
+    - "main_findings_preview + model_validation"
+    - "counterfactual_preview + profit_quantification"
+    - "three_contributions_explicit"
+    - "[roadmap implicit]"
+  data_declaration_position: "intro_paragraph_5 abstract + § 3.1 concrete"
+  REV_002_verdict: "cross_card=5 core rule preserved"
+  section_structure: "POM_SAGE_with_standalone_counterfactual_chapter"
+  section_count: 7
+  section_mergers:
+    - "§ 3 Data Description + Exploratory Analyses"
+  section_merger_count: 1
+  section_merger_POM_SAGE_pattern_CONFIRMED: "2/2 POM-SAGE = 1 merger (vs POM-Wiley 2, MS 2, MSOM 0)"
+  section_standalone_special:
+    - "§ 6 Counterfactual Analyses of Two Channel-Specific Operation Strategies (6.1 WeChat sharable-link + 6.2 App search-triggering)"
+  section_standalone_POM_SAGE_pattern_CONFIRMED: "2/2 POM-SAGE have § 6 standalone with audience/strategy subsections"
+  REV_010_POM_SAGE_fingerprint_COMMIT: "triggered: 5 sub-features confirmed cross_card=2"
+  BC12_CLOSED: "POM-SAGE fingerprint CONFIRMED vs POM-Wiley"
+
+phase_7_review_process:
+  extraction_mode: "inferred_only"
+  confidence_ceiling: 0.6
+  reviewer_personas_simulated: 5
+  inferred_objections_total: 15
+  objections_with_strong_preemption: 10
+  objections_with_medium_preemption: 3
+  objections_without_preemption: 2
+  preemption_coverage_strong_pct: 67
+  A4_strong_pct_verdict: "67% confirms REV-009 ≥55% threshold; cross_card=5 first-author average 64%"
+  preemption_style: "structural_not_argumentative"
+  preemption_artifacts:
+    - "§ 3.2 PSM dedicated segment"
+    - "§ 3.3 sequential search model-free test"
+    - "§ 4.2 identification strategies dedicated segment"
+    - "§ 5 robustness with alternative explanations"
+    - "§ 6 dual counterfactual with profit quantification"
+    - "Appendix likelihood construction"
+  main_effect_demoted: false
+  main_effect_role: "main effect IS counterintuitive (WeChat fixed up / marginal down) → drives counterfactual design"
+  parked_low_confidence_observations:
+    - "R&R_rounds_inferred_2-3 (conf 0.4)"
+    - "specific product category undisclosed (conf 0.3)"
+    - "workshop_trail (conf 0.2)"
+
+# ------------------ Candidate Patterns After 5-Card Aggregation ------------------
+
+candidate_patterns:
+  tier_S_repeatable_moves_v1_5:
+    - id: "EM1_v5_analytic_structure_invention_three_factor_three_layer"
+      cross_card_freq: 5
+      v1_5_architecture:
+        existence_layer_hu_signature: "every paper has analytic structure"
+        naming_three_factor_model:
+          topic_novelty_driven: "Retrials twin pair + WeStore title coined word"
+          measurement_unit_aggregation_need: "Tightening maker-type"
+          existing_theory_reuse_suppresses: "WeStore search theory + Supplier GBDT feature importance"
+        naming_three_layer_location:
+          title_layer: "WeStore (coined word in title)"
+          analytic_layer: "Retrials twin pair / Tightening maker-type (strongest); Supplier WeStore WEAK"
+          policy_layer: "Essential Service Package / sharable-link + search-triggering coupons / counterfactual regime / danger zone borrow — 4/4 first-author"
+      REV_011_committed: true
+      REV_008_three_layer_committed: true
+      phases_touched: [1, 3, 4, 6]
+
+    - id: "EM2_v3_identification_with_dual_defense"
+      cross_card_freq: 5
+      cross_path_completeness: "structural ×2 + RDD + DID/dPSM + ml (FULL)"
+      persistence: "Hu_signature_ROBUST_highest_confidence"
+      form_branches_v1_5:
+        structural: "parameter_to_variation_map (Retrials + WeStore 2/2)"
+        RDD: "three_element_dedicated_segment (Tightening)"
+        DID_dPSM: "three_step_identification_procedure (Delegation)"
+        ml: "endogeneity_source_triad_audit (Supplier)"
+      phases_touched: [3]
+
+    - id: "EM3_v3_independent_mechanism_validation"
+      cross_card_freq: 5
+      cross_path_completeness: "3 paths complete (structural 2/2, causal 2/2, ml 1/1)"
+      persistence: "Hu_signature_ROBUST_highest_confidence"
+      form_branches_v1_5:
+        structural: "ecological_narrative_triangulation + GoF_plus_CV (Retrials + WeStore)"
+        causal_inference: "alternative_explanation_statistical_exclusion (Tightening + Delegation)"
+        ml: "multi_layer_consistency_plus_theoretical_alignment (Supplier)"
+      REV_012_subfeature_note: "B5 structural_CV_hybrid rehabilitated as structural form_branch internal sub-feature"
+      phases_touched: [4]
+
+  tier_A_mimicable_decisions_v1_5:
+    - id: "ED1_v4_generation_mechanism_double_dimension"
+      cross_card_freq: 5
+      v1_5_double_dimension:
+        data_source_mechanism: "how data is generated"
+        analytic_angle_mechanism: "how researcher generates unique angle from data"
+      public_data_proof: "WeStore uses JD public dataset → proves generation_mechanism ≠ proprietary"
+      dual_layer: "Hu_signature (existence) + first_author_path_agnostic (purity, 4/4 first-author)"
+    - id: "ED2_v3_narrative_budget_to_counterintuitive"
+      cross_card_freq: 5
+      form_branches_v1_5: 4
+      form_branches:
+        structural_main_intuitive: "demoted_to_setup (Retrials)"
+        causal_main_counterintuitive: "elevated_to_focus (Tightening)"
+        ml_revealed_vs_stated: "theory_revision_call (Supplier)"
+        structural_with_counterfactual: "counterintuitive_drives_counterfactual_design (WeStore)"
+      persistence: "first_author_signature_path_agnostic"
+    - id: "A1_v3_external_practical_evidence"
+      cross_card_freq: 5
+      persistence: "Hu_signature_ROBUST_highest"
+      form_branches_v1_5:
+        MSOM: "named_entity_already_interested"
+        POM_Wiley: "cross_industry_analog_ladder"
+        MS: "industry_report_plus_tech_transition_anchor"
+        POM_SAGE_ml: "cross_industry_example_plus_actionable_platform_design"
+        POM_SAGE_structural: "industry_scale_stats_plus_same_field_competitor_landscape"
+    - id: "A4_v3_structural_reviewer_preemption"
+      cross_card_freq: 5
+      dual_layer_persistence:
+        existence: "Hu_signature"
+        coverage: "first_author_path_agnostic (≥55% REV-009, 5/5 confirmed; 1st-author avg=64%)"
+    - id: "A7_v2_methodology_pedagogy"
+      cross_card_freq: 5
+      persistence: "Hu_signature continuous spectrum reader_method_familiarity"
+    - id: "A8_framework_extensibility_with_concrete_anchor"
+      cross_card_freq: 5
+      persistence: "Hu_signature_ROBUST"
+      form_branches_v1_5: 5
+      stackable: "extensibility claim can combine multiple forms (WeStore evidence)"
+    - id: "A9_section_merger_conditional"
+      cross_card_freq: 4/5
+      conditions: "non_MSOM with publisher_era sensitivity"
+    - id: "A10_standalone_implications_chapter_POM_SAGE"
+      cross_card_freq: 2/2 POM_SAGE
+      persistence: "POM_SAGE_1st_author_signature"
+      sub_features: ["§ 6 location", "audience_or_strategy subsections", "per-implication quantification"]
+
+  tier_B_structural_v1_5:
+    - id: "B1_v2_intro_one_paragraph_one_action"
+      cross_card_freq: 5
+      REV_013_three_factor_matrix:
+        MSOM_phenomenon_structural: 7
+        POM_Wiley_theory_causal: 10
+        MS_hybrid_causal: 10
+        POM_SAGE_theory_ml: 8
+        POM_SAGE_phenomenon_structural: 8-9
+    - id: "B2_v2_explicit_contribution_enumeration"
+      cross_card_freq: 5
+      dual_layer: "Hu_signature (numbered) + first_author_path_agnostic (count=3)"
+      position_flexibility: "Intro | Conclusion | both"
+    - id: "B2bis_triple_audience"
+      cross_card_freq: 5
+      persistence: "Hu_signature_ROBUST_highest"
+      internal_structure_topic_dependent: "3_block vs academic-deep_plus_industry"
+    - id: "B2tri_number_repetition_across_3_plus_sections"
+      cross_card_freq: 5
+      persistence: "Hu_signature_ROBUST_highest"
+    - id: "B2quad_future_research_directions"
+      cross_card_freq: 5
+      range: "3-5 directions"
+    - id: "B3_stakes_three_tier_ladder"
+      cross_card_freq: 5
+      persistence: "Hu_signature_ROBUST_highest"
+    - id: "B8_abstract_micro_move_sequence"
+      cross_card_freq: 5
+      micro_moves: "7-10"
+      format_by_journal_era:
+        MSOM: "5_segment_structured"
+        MS: "single_paragraph"
+        POM_Wiley: "single_paragraph"
+        POM_SAGE: "single_paragraph (2/2)"
+
+  hu_core_rule_highest_tier:
+    - id: "BC3_single_main_method_plus_alternatives_as_support"
+      cross_card_freq: 5/5
+      cross_paths: "structural, RDD, DID-dPSM, ml, structural+PSM_preprocessing"
+      cross_positions: "1st, 2nd"
+      cross_journals: "MSOM, POM-Wiley, MS, POM-SAGE×2"
+      persistence: "HIGHEST STABILITY across all dimensions"
+      status: "HU_CORE_RULE above all other patterns"
+
+  tier_C_remaining_v1_5:
+    - id: "A6_moderators_as_single_force_gradient"
+      status: "Tightening only (1/5)"
+    - id: "B6_gap_as_inverted_data_asset_list"
+      status: "Tightening only (1/5)"
+    - id: "endogeneity_triad_audit_as_ml_substitute"
+      status: "Supplier only; ml-path specific; no more ml samples"
+    - id: "BC13_phenomenon_first_sub_styles"
+      status: "2 sub-styles (customer_POV + industry_disruption) observed 2/2 phenomenon_first cards"
+    - id: "intro_embedded_table"
+      status: "WeStore unique; topic-driven not Hu-signature"
+
+  tier_D_demoted_or_rehabilitated:
+    - id: "EM1_v1_coined_twin_terminology"
+      status: "absorbed into EM1_v5 three-factor three-layer"
+    - id: "B5_structural_plus_CV_hybrid"
+      status: "REHABILITATED from tier D to EM3_v3 structural form_branch sub-feature"
+
+# ------------------ Red-Line Audit ------------------
+
+red_line_audit:
+  R1:
+    verdict: "GOLD"
+    note: "public data + unique analytic angle = generation_mechanism without proprietary"
+  R2:
+    verdict: "GOLD"
+    note: "§ 4.2 identification strategies explicit + PSM + assumption tests"
+  R3:
+    verdict: "GOLD"
+    note: "Tier_GOLD counterfactual simulation × 2 + per-customer profit"
+  R4:
+    verdict: "PASS"
+    note: "3-4 dims; triggers REV-005 refinement (structural GOLD ≥4 not ≥5)"
+  R5:
+    verdict: "GOLD"
+    note: "social commerce + WeChat + JD + coupon design specific"
+  R6:
+    verdict: "PASS"
+  R7:
+    verdict: "GOLD (POM-SAGE)"
+  R8:
+    verdict: "GOLD"
+    note: "structural main + PSM pre-processing (BC3 Hu global rule)"
+  summary: "6 GOLD + 2 PASS"
+
+# ------------------ Boundary Cases Final Status ------------------
+
+boundary_cases_status_v1_5:
+  closed_after_5_cards:
+    - BC1: "REV-001 committed"
+    - BC2: "REV-002 v1.3 committed"
+    - BC3: "upgraded to Hu_core_rule"
+    - BC5: "ED2 first_author_path_agnostic"
+    - BC6: "R4 path_specific (v1.5 refinement: structural ≥4)"
+    - BC7: "extensibility 5 forms + stackable"
+    - BC8: "section merger journal-publisher-era dependent"
+    - BC12: "POM-Wiley vs POM-SAGE fingerprint CONFIRMED (REV-010 committed)"
+    - BC9: "EM1 path_capped SINGLE FACTOR REJECTED → three-factor model (REV-011)"
+  partially_closed:
+    - BC4: "open classification confirmed (5+ gap forms)"
+  pending_with_insufficient_samples:
+    - BC10: "endogeneity_triad_audit (only 1 ml card in corpus)"
+    - BC13: "phenomenon_first sub-styles (only 2 phenomenon cards)"
+
+# ------------------ Executable Summary v1.5 ------------------
+
+executable_summary:
+  version: "v1.5 (three-factor × three-layer EM1 + path_capped precision + Hu_core_rule)"
+  architecture: |
+    Three persistence layers per pattern:
+    1. Hu_signature layer (existence)
+    2. first_author_signature path_agnostic layer (uniform execution)
+    3. first_author_signature path_capped layer (method architecture ceiling)
+    
+    PLUS Hu_core_rule (single_main_method_plus_alternatives) above all
+
+  three_repeatable_moves:
+    - id: "EM1_v5_analytic_structure_three_factor_three_layer"
+      existence: "Hu_signature — every paper has analytic structure"
+      naming_three_factor_model:
+        topic_novelty: "naming when introducing new research area"
+        measurement_need: "naming when inventing aggregation unit"
+        existing_theory_reuse: "naming suppressed when borrowing existing framework"
+      naming_three_layer_location:
+        title_layer: "coined word or portmanteau in title"
+        analytic_layer: "twin pair or named analytic unit in body"
+        policy_layer: "original policy_prescription naming (first_author_path_agnostic)"
+      failure_mode: "沿用文献模糊单位致测量与 model 错位"
+      
+    - id: "EM2_v3_identification_with_dual_defense"
+      persistence: "Hu_signature ROBUST highest confidence"
+      form_branches_full: [structural, RDD, DID_dPSM, ml]
+      failure_mode: "只挂 precedent 或只挂 testability — reviewer 攻缺失那条"
+      
+    - id: "EM3_v3_independent_mechanism_validation"
+      persistence: "Hu_signature ROBUST"
+      form_branches_full: [structural_with_GoF_CV, causal_with_statistical_exclusion, ml_with_multi_layer_consistency]
+      failure_mode: "无独立 validation → main effect 被读成 artifact"
+
+  two_mimicable_decisions:
+    - id: "ED1_v4_generation_mechanism_double_dimension"
+      existence: "Hu_signature (mechanism in place)"
+      purity: "first_author_path_agnostic (no scarcity admission when leading)"
+      double_dimension:
+        data_source_mechanism: "how data is generated"
+        analytic_angle_mechanism: "how researcher generates unique view"
+      public_data_compatible: "proven by WeStore"
+      decision_rule_leading: "evaluate both dimensions; no scarcity admission"
+      
+    - id: "ED2_v3_narrative_budget_to_counterintuitive"
+      strength_layer: "first_author_path_agnostic"
+      form_branches_4: true
+      decision_rule: "sort counterintuitive rank before writing → allocate paragraphs"
+  
+  one_failure_mode:
+    - id: "EF1_v4_quantification_engine_path_capped"
+      existence: "Hu_signature"
+      strength_tier_by_path:
+        structural: "GOLD STANDARD (counterfactual simulation, 2/2 first-author)"
+        causal_1st: "GOLD achievable (chain or simulation)"
+        causal_non_lead: "PASS default"
+        ml: "GOLD_MEDIUM ceiling (coefficient-to-value mapping)"
+      hard_fail: "Tier_FAIL → R3 collapses"
+      soft_fail: "1st-author stops at PASS → below first-author standard"
+  
+  closed_loop_v1_5: |
+    Hu_signature spine (cross-position existence):
+      EM1 analytic structure → EM2 identification+dual → EM3 independent validation →
+      ED1 generation mechanism (double dimension) → [ED2 weak in non-lead] → EF1 some quantification
+    
+    first_author_path_agnostic (uniform when leading):
+      EM1 policy_layer_naming (4/4)
+      ED1 purity (no scarcity)
+      ED2 counterintuitive concentration
+      A4 preempt ≥55% coverage
+      B2 count=3 explicit numbering
+      EF1 ≥ Tier PASS
+    
+    first_author_path_capped (method ceiling):
+      EM1 analytic_layer naming (three-factor model, not path only)
+      EF1 strength tier (structural/causal GOLD → standard; ml GOLD-MEDIUM ceiling)
+    
+    Hu_core_rule (above all, 5/5 no exception):
+      single_main_method + alternatives_as_support
+
+# ------------------ Framework Revisions ------------------
+
+framework_revisions_this_card:
+  - revision_id: "REV-005_refinement"
+    target: "R4 structural GOLD threshold"
+    status: "COMMITTED v1.5"
+    change: "structural GOLD ≥5 → ≥4 (WeStore 3-4 dims evidence)"
+  - revision_id: "REV-008_v1_5"
+    target: "EM1 naming triple-layer"
+    status: "COMMITTED v1.5"
+    structure: "title_layer / analytic_layer / policy_layer"
+  - revision_id: "REV-010"
+    target: "POM-SAGE fingerprint"
+    status: "COMMITTED v1.5 (BC12 resolution)"
+    sub_features:
+      - "single paragraph abstract (7-10 micro_moves)"
+      - "1 section merger typical"
+      - "§ 6 standalone chapter with audience/strategy subsections"
+      - "title colon+suffix structure"
+      - "8-9 intro paragraphs"
+  - revision_id: "REV-011"
+    target: "EM1 naming three-factor model"
+    status: "COMMITTED v1.5"
+    factors: [topic_novelty, measurement_need, existing_theory_reuse_suppression]
+  - revision_id: "REV-012"
+    target: "form_branches internal sub-feature marking"
+    status: "COMMITTED v1.5"
+    example: "B5 rehabilitated as EM3 structural form_branch sub-feature"
+  - revision_id: "REV-013"
+    target: "Intro paragraph count three-factor model"
+    status: "COMMITTED v1.5"
+    formula: "Intro paragraphs = f(opening_style × method_path × journal_publisher_era)"
+
+# ------------------ POM-SAGE Fingerprint Committed ------------------
+
+journal_fingerprint_POM_SAGE_COMMITTED:
+  n: 2
+  sub_features_cross_card_2:
+    abstract: "single paragraph with 7-10 micro_moves"
+    section_mergers: "1 (typically Data+Exploratory or Method+Results)"
+    standalone_chapter_6: "§ 6 dedicated to Implications/Counterfactual with audience/strategy subsections"
+    title_pattern: "colon+suffix structure (Evidence from / Subject Explanation)"
+    intro_paragraphs: "8-9"
+  contrast_vs_POM_Wiley:
+    title: "POM-Wiley no colon; POM-SAGE colon+suffix"
+    mergers: "POM-Wiley 2; POM-SAGE 1"
+    ch_6: "POM-Wiley 未独立; POM-SAGE standalone"
+  status: "REV-010 COMMITTED; first journal fingerprint formally committed in library"
+
+# ------------------ Copyright Compliance ------------------
+
+copyright_compliance:
+  max_quote_words_used: 0
+  max_quotes_per_source_used: 0
+  inferred_tags_count: 24
+  paraphrase_coverage_percent: 100
+  wish_words_detected: 0
+  quote_budget_in: 1
+  quote_budget_out: 1
+  quote_budget_status: "fully preserved across 5 cards, 0 direct quotes"
+
+# ------------------ Card Metadata ------------------
+
+card_metadata:
+  extractor_version: "HuTacitExtractor v1.5"
+  extraction_mode: "single_paper_minimum_viable_completion"
+  verbosity: "batched"
+  extraction_rounds: 5
+  phases_executed: ["diagnose", "decompose_x7", "surface", "audit", "distill_v1_5", "handoff"]
+  candidate_patterns_surfaced: 25
+  confirmed_patterns_v1_5: 16
+  hu_core_rule_identified: 1
+  three_factor_patterns: 1  # EM1
+  three_layer_patterns: 1  # EM1
+  dual_layer_patterns: 5
+  form_branches_complete_patterns: 3
+  tier_C_remaining: 5
+  tier_D_absorbed: 2
+  boundary_cases_closed: 9
+  boundary_cases_partial: 1
+  boundary_cases_pending: 2
+  framework_revisions_committed_v1_5: 6
+  red_line_GOLD_count: 6
+  red_line_PASS_count: 2
+  session_continuation: "from Retrials+Tightening+Delegation+Supplier"
+  architectural_milestone_v1_5: |
+    Corpus size 5 reached (minimum_viable_threshold)
+    EM1 three-factor three-layer naming architecture committed
+    POM-SAGE fingerprint formally committed
+    Hu_core_rule identified above all patterns
+    path_capped precision: structural GOLD standard, ml GOLD-MEDIUM ceiling
