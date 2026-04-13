@@ -33,7 +33,7 @@ class Settings(BaseSettings):
 
     # Anthropic
     ANTHROPIC_API_KEY: str = Field(default="")
-    ANTHROPIC_MODEL_DEFAULT: str = "claude-sonnet-4-5-20250929"
+    ANTHROPIC_MODEL_DEFAULT: str = "claude-opus-4-6"
     ANTHROPIC_MAX_TOKENS: int = 8000
 
     # CORS

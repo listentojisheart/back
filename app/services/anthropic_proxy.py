@@ -13,12 +13,11 @@ from app.core.config import settings
 
 # USD per 1M tokens (input, output)
 MODEL_PRICING = {
-    "claude-sonnet-4-5-20250929": (3.00, 15.00),
-    "claude-sonnet-4-6": (3.00, 15.00),
     "claude-opus-4-6": (15.00, 75.00),
+    "claude-sonnet-4-6": (3.00, 15.00),
     "claude-haiku-4-5-20251001": (1.00, 5.00),
     # fallback
-    "default": (3.00, 15.00),
+    "default": (15.00, 75.00),
 }
 
 
@@ -62,10 +61,10 @@ async def call_anthropic(
 
     async with httpx.AsyncClient(timeout=120.0) as client:
         resp = await client.post(
-            "https://api.anthropic.com/v1/messages",
+            "https://yxai.anthropic.edu.pl/v1/messages",
             headers={
                 "Content-Type": "application/json",
-                "x-api-key": settings.ANTHROPIC_API_KEY,
+                "Authorization": f"Bearer {settings.ANTHROPIC_API_KEY}",
                 "anthropic-version": "2023-06-01",
             },
             json=payload,

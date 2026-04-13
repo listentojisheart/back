@@ -70,7 +70,7 @@ class Conversation(Base):
     user_id: Mapped[int] = mapped_column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False, index=True)
     title: Mapped[str] = mapped_column(String(255), default="Untitled", nullable=False)
     mode: Mapped[str] = mapped_column(String(32), default="router", nullable=False)  # router | branch_a | branch_b
-    model: Mapped[str] = mapped_column(String(64), default="claude-sonnet-4-5-20250929", nullable=False)
+    model: Mapped[str] = mapped_column(String(64), default="claude-opus-4-6", nullable=False)
     language: Mapped[str] = mapped_column(String(16), default="auto", nullable=False)  # auto | en | zh
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now, nullable=False)
     updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now, onupdate=_now, nullable=False)
