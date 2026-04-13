@@ -69,7 +69,7 @@ class Conversation(Base):
     id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)
     user_id: Mapped[int] = mapped_column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False, index=True)
     title: Mapped[str] = mapped_column(String(255), default="Untitled", nullable=False)
-    mode: Mapped[str] = mapped_column(String(32), default="router", nullable=False)  # router | branch_a | branch_b
+    mode: Mapped[str] = mapped_column(String(32), default="branch_a_beta", nullable=False)  # branch_a_alpha | branch_a_beta | branch_b_alpha | branch_b_beta
     model: Mapped[str] = mapped_column(String(64), default="claude-opus-4-6", nullable=False)
     language: Mapped[str] = mapped_column(String(16), default="auto", nullable=False)  # auto | en | zh
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now, nullable=False)

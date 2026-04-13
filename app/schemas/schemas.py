@@ -43,7 +43,7 @@ class UserPublic(BaseModel):
 
 class ConversationCreate(BaseModel):
     title: str = Field(default="Untitled", max_length=255)
-    mode: str = Field(default="router")  # router | branch_a | branch_b
+    mode: str = Field(default="branch_a_beta")  # branch_a_alpha | branch_a_beta | branch_b_alpha | branch_b_beta
     model: str = Field(default="claude-opus-4-6")
     language: str = Field(default="auto")
 

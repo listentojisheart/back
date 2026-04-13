@@ -52,7 +52,7 @@ def upgrade() -> None:
         sa.Column("id", sa.Integer, primary_key=True),
         sa.Column("user_id", sa.Integer, sa.ForeignKey("users.id", ondelete="CASCADE"), nullable=False),
         sa.Column("title", sa.String(255), nullable=False, server_default="Untitled"),
-        sa.Column("mode", sa.String(32), nullable=False, server_default="router"),
+        sa.Column("mode", sa.String(32), nullable=False, server_default="branch_a_beta"),
         sa.Column("model", sa.String(64), nullable=False, server_default="claude-opus-4-6"),
         sa.Column("language", sa.String(16), nullable=False, server_default="auto"),
         sa.Column("created_at", sa.DateTime(timezone=True), nullable=False, server_default=sa.func.now()),
